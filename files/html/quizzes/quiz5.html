@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz 1</title>
+    <link rel="stylesheet" href="../../css/quizzes/quiz5.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="quiz1">
+      <!-- Navbar -->
+      <div class="topnav">
+        <a href="../../html/getstarted.html" class="logo"
+          ><img src="../../img/DRME.Alchemist Logo No Text.png" alt="logo"
+        /></a>
+        <div class="name">
+          <a href="../../html/getstarted.html">DRME.Alchemist</a>
+        </div>
+
+        <div class="option">
+          <a href="../../html/home.html" class="opt1">Homepage</a>
+          <a href="../../html/lessons.html" class="opt2">Lessons</a>
+          <a href="../../html/quiz.html" class="opt3">Quiz</a>
+          <a href="../../html/aboutUs.html" class="opt4">About Us</a>
+        </div>
+
+        <div class="search-container">
+          <label class="label">
+            <i class="material-icons" id="search">search</i>
+            <input type="text" placeholder="Search" name="search" />
+          </label>
+        </div>
+      </div>
+
+      <!-- Main -->
+      <div class="main-container">
+        <div class="quiz-container">
+          <div class="quizTitle">
+            <h1 id="title">Lesson5</h1>
+          </div>
+
+          <div id="btnCancel" class="cancel"><button onclick="location.href = '../lessons/lesson5.html'" class="cancelButton" type="button">Take Lesson</button></div>
+
+          <div class="quizBody">
+            <form name="quiz">
+              <!-- Question 1 -->
+              <div class="question1">
+                <p id="num1" class="question">
+                  1. It is a sample of three forms of matter: gas, liquid, solid.
+                </p>
+                <div class="sect1">
+                  <div class="answer">
+                    <label for="correctAnswer1" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="correctAnswer1"
+                        name="q1"
+                        value="a"
+                      /><span class="custom-radio"></span>
+                      <span class="correct">&#10004;</span>
+                      <header>States of Matter</header></label 
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="answer1b" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer1b"
+                        name="q1"
+                        value="b"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Elements</header></label
+                    >
+                  </div>
+                </div>
+                <div class="sect2">
+                  <div class="answer">
+                    <label for="answer1c" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer1c"
+                        name="q1"
+                        value="c"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Matter</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="answer1d" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer1d"
+                        name="q1"
+                        value="d"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Three Matter</header></label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <!-- Question 2 -->
+              <div class="question2">
+                <p id="num2" class="question">2. It is also known as vapor, and it has no fixed volume or shape. It conforms to the volume and shape of its &#160;&#160;&#160;&#160;container.</p>
+                <div class="sect1">
+                  <div class="answer">
+                    <label for="answer2a" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer2a"
+                        name="q2"
+                        value="a"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Liquid</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="answer2b" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer2b"
+                        name="q2"
+                        value="b"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Solid</header></label
+                    >
+                  </div>
+                </div>
+                <div class="sect2">
+                  <div class="answer">
+                    <label for="answer2c" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer2c"
+                        name="q2"
+                        value="c"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Plasma</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="correctAnswer2" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="correctAnswer2"
+                        name="q2"
+                        value="d"
+                      /><span class="custom-radio"></span>
+                      <span class="correct">&#10004;</span>
+                      <header>Gas</header></label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <!-- Question 3 -->
+              <div class="question3">
+                <p id="num3" class="question">3. It has distinct volume independent of its container but has no specific shape.</p>
+                <div class="sect1">
+                  <div class="answer">
+                    <label for="answer3a" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer3a"
+                        name="q3"
+                        value="a"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Plasma</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="correctAnswer3" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="correctAnswer3"
+                        name="q3"
+                        value="b"
+                      /><span class="custom-radio"></span>
+                      <span class="correct">&#10004;</span>
+                      <header>Liquid</header></label
+                    >
+                  </div>
+                </div>
+                <div class="sect2">
+                  <div class="answer">
+                    <label for="answer3c" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer3c"
+                        name="q3"
+                        value="c"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Gas</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="answer3d" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer3d"
+                        name="q3"
+                        value="d"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Solid</header></label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <!-- Question 4 -->
+              <div class="question4">
+                <p id="num4" class="question">4. Has both a definite shape and definite volume.</p>
+                <div class="sect1">
+                  <div class="answer">
+                    <label for="correctAnswer4" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="correctAnswer4"
+                        name="q4"
+                        value="a"
+                      /><span class="custom-radio"></span>
+                      <span class="correct">&#10004;</span>
+                      <header>Solid</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="answer4b" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer4b"
+                        name="q4"
+                        value="b"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Gas</header></label
+                    >
+                  </div>
+                </div>
+                <div class="sect2">
+                  <div class="answer">
+                    <label for="answer4c" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer4c"
+                        name="q4"
+                        value="c"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Plasma</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="answer4d" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer4d"
+                        name="q4"
+                        value="d"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Liquid</header></label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <!-- Question 5 -->
+              <div class="question5">
+                <p id="num5" class="question">5. It is a matter that has a fixed composition and distinct properties.</p>
+                <div class="sect1">
+                  <div class="answer">
+                    <label for="answer5a" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer5a"
+                        name="q5"
+                        value="a"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Pure Compounds</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="answer5b" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer5b"
+                        name="q5"
+                        value="b"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Pure Elements</header></label
+                    >
+                  </div>
+                </div>
+                <div class="sect2">
+                  <div class="answer">
+                    <label for="correctAnswer5" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="correctAnswer5"
+                        name="q5"
+                        value="c"
+                      /><span class="custom-radio"></span>
+                      <span class="correct">&#10004;</span>
+                      <header>Pure Substance</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="answer5d" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer5d"
+                        name="q5"
+                        value="d"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Elements</header></label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <!-- Question 6 -->
+              <div class="question6">
+                <p id="num6" class="question">6. Substances that cannot be decomposed into simpler substances.</p>
+                <div class="sect1">
+                  <div class="answer">
+                    <label for="answer6a" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer6a"
+                        name="q6"
+                        value="a"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Compounds</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="answer6b" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer6b"
+                        name="q6"
+                        value="b"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Colloid</header></label
+                    >
+                  </div>
+                </div>
+                <div class="sect2">
+                  <div class="answer">
+                    <label for="answer6c" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer6c"
+                        name="q6"
+                        value="c"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Homogeneous</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="correctAnswer6" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="correctAnswer6"
+                        name="q6"
+                        value="d"
+                      /><span class="custom-radio"></span>
+                      <span class="correct">&#10004;</span>
+                      <header>Elements</header></label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <!-- Question 7 -->
+              <div class="question7">
+                <p id="num7" class="question">7. It is composed of two or more elements and contain two or more kind of Atoms.</p>
+                <div class="sect1">
+                  <div class="answer">
+                    <label for="correctAnswer7" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="correctAnswer7"
+                        name="q7"
+                        value="a"
+                      /><span class="custom-radio"></span>
+                      <span class="correct">&#10004;</span>
+                      <header>Compounds</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="answer7b" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer7b"
+                        name="q7"
+                        value="b"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Elements</header></label
+                    >
+                  </div>
+                </div>
+                <div class="sect2">
+                  <div class="answer">
+                    <label for="answer7c" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer7c"
+                        name="q7"
+                        value="c"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Heterogenous</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="answer7d" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer7d"
+                        name="q7"
+                        value="d"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Homogenous</header></label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <!-- Question 8 -->
+              <div id="num8" class="question8">
+                <p class="question">8. Combination of two or more substances. Each substances retains its own chemical identity and own &#160;&#160;&#160;&#160;properties.</p>
+                <div class="sect1">
+                  <div class="answer">
+                    <label for="answer8a" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer8a"
+                        name="q8"
+                        value="a"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Homogenous</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="answer8b" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer8b"
+                        name="q8"
+                        value="b"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Compounds</header></label
+                    >
+                  </div>
+                </div>
+                <div class="sect2">
+                  <div class="answer">
+                    <label for="correctAnswer8" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="correctAnswer8"
+                        name="q8"
+                        value="c"
+                      /><span class="custom-radio"></span>
+                      <span class="correct">&#10004;</span>
+                      <header>Mixtures</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="answer8d" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer8d"
+                        name="q8"
+                        value="d"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Substances</header></label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <!-- Question 9 -->
+              <div class="question9">
+                <p id="num9" class="question">9. Mixture that does not have the same composition, properties, appearance and thought the mixture is called &#160;&#160;&#160;&#160;_______.</p>
+                <div class="sect1">
+                  <div class="answer">
+                    <label for="correctAnswer9" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="correctAnswer9"
+                        name="q9"
+                        value="a"
+                      /><span class="custom-radio"></span>
+                      <span class="correct">&#10004;</span>
+                      <header>Heterogenous</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="answer9b" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer9b"
+                        name="q9"
+                        value="b"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Homogenous</header></label
+                    >
+                  </div>
+                </div>
+                <div class="sect2">
+                  <div class="answer">
+                    <label for="answer9c" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer9c"
+                        name="q9"
+                        value="c"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Colloid</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="answer9d" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer9d"
+                        name="q9"
+                        value="d"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Solution</header></label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <!-- Question 10 -->
+              <div class="question10">
+                <p id="num10" class="question">10. It is a mixture that are uniform throughout is called _______.</p>
+                <div class="sect1">
+                  <div class="answer">
+                    <label for="answer10a" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer10a"
+                        name="q10"
+                        value="a"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Colloid</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="correctAnswer10" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="correctAnswer10"
+                        name="q10"
+                        value="b"
+                      /><span class="custom-radio"></span>
+                      <span class="correct">&#10004;</span>
+                      <header>Homogenous</header></label
+                    >
+                  </div>
+                </div>
+                <div class="sect2">
+                  <div class="answer">
+                    <label for="answer10c" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer10c"
+                        name="q10"
+                        value="c"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Heterogenous</header></label
+                    >
+                  </div>
+                  <div class="answer">
+                    <label for="answer10d" class="radio-container"
+                      ><input
+                        type="radio"
+                        class="radios"
+                        id="answer10d"
+                        name="q10"
+                        value="d"
+                      /><span class="custom-radio"></span>
+                      <span class="wrong">&#10006;</span>
+                      <header>Solution</header></label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <br />
+            </form>
+            <button onclick="quizFunction()" id="btn">Submit</button>
+            <button onclick="location.href = '../quizzes/quiz5.html'" id="btn2">Try Again</button>
+            <div class="spacer"></div>
+            <br />
+          </div>
+        </div>
+        <div id="popUp-overlay"></div>
+        <div id="popUp-overlay2"></div>
+        <div id="popUp" class="popUp">
+          <p id="grading"></p>
+          <p id="score"></p>
+          <div class="btns">
+            <div class="div1">
+              <button onclick="results()" id="results" class="showResult" type="button">Show Result</button>
+            </div>
+            <div class="div2">
+              <button
+                onclick="location.href = '../quizzes/quiz5.html'"
+                class="tryAgain"
+                type="button"
+              >
+                Try Again
+              </button>
+              <button onclick="location.href = '../lessons/lesson5.html'" class="currentLesson" type="button">
+                Current Lesson
+              </button>
+              <button onclick="location.href = '../lessons/lesson6.html'" class="nextLesson" type="button">
+                Proceed to Next Lesson
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="popUp2">
+            <p id="alert"></p>
+            <p>Do you still want to continue?</p>
+            <button onclick="hide()" id="no" type="button">No</button>
+            <button onclick="clickYes()" id="yes" type="button">Yes</button>
+        </div>
+        <div id="popUp3">
+          <p>You did not answer any question.</p>
+          <p>Please answer at least one question to show you a result. </p>
+          <button onclick="location.href = '../quizzes/quiz5.html'" id="takeQuiz" type="button">Take Quiz</button>
+        </div>
+      </div>
+
+      
+    </div>
+    <script src="../../js/quiz.js"></script>
+  </body>
+</html>

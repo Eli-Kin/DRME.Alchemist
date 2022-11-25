@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="home">
+      <!-- Navbar -->
+      <div class="topnav">
+        <a href="../html/getstarted.html" class="logo"
+          ><img src="../img/DRME.Alchemist Logo No Text.png" alt="logo"
+        /></a>
+        <div class="name">
+          <a href="../html/getstarted.html">DRME.Alchemist</a>
+        </div>
+        
+
+        <div class="option">
+          <a href="../html/home.html" class="opt1">Homepage</a>
+          <a href="../html/lessons.html" class="opt2">Lessons</a>
+          <a href="../html/quiz.html" class="opt3">Quiz</a>
+          <a href="../html/aboutUs.html" class="opt4">About Us</a>
+        </div>
+
+        <div class="search-container">
+          <label>
+            <i class="material-icons" id="search">search</i>
+            <input type="text" placeholder="Search" name="search" />
+          </label>
+        </div>
+      </div>
+
+      <!-- Main -->
+      <div class="main-container">
+        <div class="slideshow">
+          <img class="slideImg" src="../img/Image.png" />
+          <img class="slideImg" src="../img/Image 2.png" />
+          <img class="slideImg" src="../img/Image.png" />
+          <img class="slideImg" src="../img/Image 2.png" />
+          <img class="slideImg" src="../img/Image.png" />
+          <img class="slideImg" src="../img/Image 2.png" />
+        </div>
+
+        <div class="sidebar">
+
+          <div class="triviaFacts">
+            <div class="facts">
+              <h2>Trivia Facts</h2>
+              <hr />
+              <h1>Did You Know?</h1>
+              <p id="theFacts"></p>
+            </div>
+          </div>
+
+          <div class="Trivia">
+            <div class="triviaHeading">
+              <h2 class="triviaTitle">Trivia</h2>
+              <h2 id="score"></h2>
+              <h2 class="currentScore">Current Score:</h2>
+            </div>
+
+            <div class="line">
+              <hr />
+            </div>
+
+            <div class="triviaBody">
+              <div class="question">
+                <h3>Question:</h3>
+
+                <p id="question" class="triviaQuestion"></p>
+              </div>
+
+              <div class="answer">
+                <div class="Sect1">
+                  <div class="Option">
+                    <button id="answerA" onclick="answerA_clicked()"></button>
+                  </div>
+
+                  <div class="Option">
+                    <button id="answerB" onclick="answerB_clicked()"></button>
+                  </div>
+                </div>
+
+                <div class="Sect2">
+                  <div class="Option">
+                    <button id="answerC" onclick="answerC_clicked()"></button>
+                  </div>
+
+                  <div class="Option">
+                    <button id="answerD" onclick="answerD_clicked()"></button>
+                  </div>
+                </div>
+                <span id="correct" class="material-symbols-outlined">check_circle</span>
+
+                <span id="wrong" class="material-symbols-outlined">cancel</span>
+              </div>
+
+ 
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/home.js"></script>
+
+    <script>
+      //Slideshow
+      var MyImg = 0;
+      slideShow();
+
+      function slideShow() {
+        var i;
+        var showImg = document.getElementsByClassName("slideImg");
+        for (i = 0; i < showImg.length; i++) {
+          showImg[i].style.display = "none";
+        }
+        MyImg++;
+        if (MyImg > showImg.length) {
+          MyImg = 1;
+        }
+        showImg[MyImg - 1].style.display = "block";
+        setTimeout(slideShow, 4000);
+      }
+    </script>
+  </body>
+</html>
