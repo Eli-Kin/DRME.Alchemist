@@ -208,7 +208,7 @@ body {
   cursor: pointer;
 }
 
-label:active {
+.answer label:active {
   background-color: #53a055;
   color: white;
 }
@@ -224,6 +224,11 @@ label:active {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.radio-container:has(> input:checked) {
+  background-color: #53a055;
+  color: white;
 }
 
 .radio-container header {
@@ -327,7 +332,7 @@ label:active {
   cursor: pointer;
   margin: 10px;
   position: absolute;
-  top: 346%;
+  top: 338%;
   left: 38.8%;
   box-shadow: 1px 1px 5px #53a055;
 }
@@ -347,7 +352,7 @@ label:active {
   cursor: pointer;
   margin: 10px;
   position: absolute;
-  top: 346%;
+  top: 338%;
   left: 38.8%;
   box-shadow: 1px 1px 5px #53a055;
 }

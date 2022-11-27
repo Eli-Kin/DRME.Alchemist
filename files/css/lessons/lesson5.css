@@ -223,7 +223,7 @@ label {
     position: relative;
     width: auto;
     height: 10%;
-    top: 180vh;
+    top: 255vh;
     bottom: 0;
     left: 0;
     right: 0;
@@ -248,5 +248,9 @@ label {
   .lessonFunction #next {
     float: right;
     margin-right: 40px;
+  }
+
+  .lessonFunction #previous {
+    float: right;
   }
 

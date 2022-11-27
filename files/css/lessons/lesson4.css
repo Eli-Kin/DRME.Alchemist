@@ -184,17 +184,29 @@ label {
     width: 49%;
     height: 55vh;
     float: left;
+    margin-bottom: 45px;
   }
 
   .lessonImg img {
+    position: relative;
     width: 100%;
     height: auto;
     border: #136129 dashed 2px;
+    top: 0;
+    bottom: 25px;
+  }
+
+  .line {
+    color: #136129;
+    background-color: #136129;
+    border: #136129 solid 1px;
   }
 
   .lessonImg a {
+    display: block;
     text-decoration: none;
     color: #136129;
+    word-wrap: break-word;
   }
 
   .lessonBody .topics {
@@ -223,7 +235,7 @@ label {
     position: relative;
     width: auto;
     height: 10%;
-    top: 180vh;
+    top: 310vh;
     bottom: 0;
     left: 0;
     right: 0;
@@ -247,6 +259,9 @@ label {
 
   .lessonFunction #next {
     float: right;
-    margin-right: 40px;
+  }
+
+  .lessonFunction #previous {
+    float: right;
   }
 

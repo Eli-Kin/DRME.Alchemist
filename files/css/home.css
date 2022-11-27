@@ -106,7 +106,7 @@ label {
     display: inline;
   }
 
-  .main-container .slideImg {
+  /* .main-container .slideImg {
     display: none;
     width: 95%;
     height: auto;
@@ -114,6 +114,18 @@ label {
     margin-right: auto;
     margin-top: 40px;
     border-radius: 30px;
+  } */
+
+  .slideshow .slideImg {
+    position: relative;
+    width: 730px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    padding: 5px;
+    border: #388624 dashed 2px;
+    top: 30px;
   }
 
   .main-container .sidebar {

@@ -214,7 +214,7 @@ body {
   cursor: pointer;
 }
 
-label:active {
+.answer label:active {
   background-color: #53a055;
   color: white;
 }

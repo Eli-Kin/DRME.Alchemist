@@ -180,21 +180,40 @@ label {
   .lscontainer .lessonImg {
     position: relative;
     z-index: 1;
-    margin-top: 10px;
+    margin-top: 0px;
     width: 49%;
     height: 55vh;
+    left: 30px;
+    bottom: 20px;
     float: left;
   }
 
   .lessonImg img {
-    width: 100%;
+    width: 85%;
     height: auto;
     border: #136129 dashed 2px;
+    margin-top: 10px;
+  }
+
+  .lessonImg #diatomic {
+    position: relative;
+    width: 70%;
+    height: auto;
+    left: 155px;
   }
 
   .lessonImg a {
+    display: block;
     text-decoration: none;
     color: #136129;
+  }
+
+  .lessonImg #adiatomic {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #136129;
+    text-align: center;
   }
 
   .lessonBody .topics {
@@ -219,11 +238,45 @@ label {
     text-align: justify;
   }
 
-  .lesson-container .lessonFunction {
+  .topics #figure215 {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .topics .sect1 {
+    width: 70%;
+    height: auto;
+    float: right;
+    margin-bottom: 70px;
+  }
+
+  .topics .sect2 {
+    margin-right: 20px ;
+    width: 28%;
+    height: auto;
+    float: left;
+  }
+
+  .lessonImg #common {
     position: relative;
+    width: 85%;
+    height: auto;
+    margin-left: 20px;
+    top: 15px;
+  }
+
+  .lessonImg #acommon {
+    position: relative;
+    word-wrap: break-word;
+    top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .lesson-container .lessonFunction {
+    position: absolute;
     width: auto;
     height: 10%;
-    top: 180vh;
+    top: 385vh;
     bottom: 0;
     left: 0;
     right: 0;
@@ -247,6 +300,9 @@ label {
 
   .lessonFunction #next {
     float: right;
-    margin-right: 40px;
+  }
+
+  .lessonFunction #previous {
+    float: right;
   }
 

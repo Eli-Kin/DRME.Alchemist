@@ -1,245 +1,328 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .topnav {
-    position: relative;
-    background-color: #ffffff;
-    overflow: hidden;
-    box-shadow: 0px 0px 1px ;
-    z-index: 1;
-    height: 10%;
-    margin-top: 1px;
+  position: relative;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 0px 1px;
+  z-index: 1;
+  height: 10%;
+  margin-top: 1px;
 }
 
 .topnav img {
-    position: relative;
-    top: 1px;
-    width: 70px;
-    height: auto;
-    margin-left: 10px;
-    float: left;
+  position: relative;
+  top: 1px;
+  width: 70px;
+  height: auto;
+  margin-left: 10px;
+  float: left;
 }
 
 .topnav .name {
-    position: relative;
-    float: left;
-    margin-top: 0px;
-  }
-  
-  .name a {
-      text-decoration: none;
-      float: left;
-      margin: 0px;
-      padding-top: 15px;
-      font-family: 'Nunito';
-      font-size: 30px;
-      color: #388624;
-  }
+  position: relative;
+  float: left;
+  margin-top: 0px;
+}
+
+.name a {
+  text-decoration: none;
+  float: left;
+  margin: 0px;
+  padding-top: 15px;
+  font-family: "Nunito";
+  font-size: 30px;
+  color: #388624;
+}
 
 .topnav .option {
-    position: relative;
-    float: left;
-    margin-top: 27px;
-    
+  position: relative;
+  float: left;
+  margin-top: 27px;
 }
 
 .option a {
-    text-decoration: none;
-    color: #136129;
-    margin-left: 30px;
-    font-family: 'Nunito';
-    font-weight: bold;
+  text-decoration: none;
+  color: #136129;
+  margin-left: 30px;
+  font-family: "Nunito";
+  font-weight: bold;
 }
 
 .option .opt1 {
-    margin-left: 260px;
+  margin-left: 260px;
 }
 
 .option .opt2 {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .search-container {
-    padding: 15px;
+  padding: 15px;
 }
 
 .search-container ::placeholder {
-    color: #388624;
-    overflow: auto;
-  }
+  color: #388624;
+  overflow: auto;
+}
 
 label {
-    float: right;
-    width: 300px;
-    display: grid;
-    grid-template: 1fr / auto 1fr;
-    gap: 12px;
-    border: 1px solid #CFD5DB;
-    border-radius: 5px;
-    background: #dbeafe;
-    padding: 7px;
-    color: #388624;
-    cursor: text;
-  }
-  
-  label:focus-within {
-    border: 1px solid #136129;
-  }
-  
-  label>input {
-    outline: none;
-    border: none;
-    background: transparent;
-  }
+  float: right;
+  width: 300px;
+  display: grid;
+  grid-template: 1fr / auto 1fr;
+  gap: 12px;
+  border: 1px solid #cfd5db;
+  border-radius: 5px;
+  background: #dbeafe;
+  padding: 7px;
+  color: #388624;
+  cursor: text;
+}
 
-  .main-container {
-    position: absolute;
-    background-color: #B7EBBC;
-    width: 100%;
-    height: 90%;
-    overflow: hidden;
-    margin: 0;
-  }
+label:focus-within {
+  border: 1px solid #136129;
+}
 
-  .main-container .lesson-container {
-    position: absolute;
-    background-color: #E5FCE7;
-    width: 70%;
-    height: 100%;
-    padding: 20px;
-    top: 0px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
+label > input {
+  outline: none;
+  border: none;
+  background: transparent;
+}
 
-  .lesson-container::-webkit-scrollbar {
-    width: 7px;
-  }
+.main-container {
+  position: absolute;
+  background-color: #b7ebbc;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  margin: 0;
+}
 
-  .lesson-container::-webkit-scrollbar-thumb {
-    background-color: #9BF0B8;
-    opacity: 0.4;
-    border-radius: 3px;
-    visibility: hidden;
-  }
+.main-container .lesson-container {
+  position: absolute;
+  background-color: #e5fce7;
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
 
-  .lesson-container:hover::-webkit-scrollbar-thumb {
-    background-color: #9BF0B8;
-    opacity: 0.4;
-    border-radius: 3px;
-    visibility: visible;
-  }
+.lesson-container::-webkit-scrollbar {
+  width: 7px;
+}
 
-  .lesson-container .lessonTitle {
-    width: auto;
-    height: 10%;
-  }
+.lesson-container::-webkit-scrollbar-thumb {
+  background-color: #9bf0b8;
+  opacity: 0.4;
+  border-radius: 3px;
+  visibility: hidden;
+}
 
-  .lessonTitle h1 {
-    font-family: 'Inter';
-    font-weight: bolder;
-    font-size: 30px;
-    color: #136129;
-  }
+.lesson-container:hover::-webkit-scrollbar-thumb {
+  background-color: #9bf0b8;
+  opacity: 0.4;
+  border-radius: 3px;
+  visibility: visible;
+}
 
-  .lesson-container .lessonBody {
-    position: relative;
-    width: auto;
-    height: 80%;
-  }
+.lesson-container .lessonTitle {
+  width: auto;
+  height: 10%;
+}
 
-  .lessonBody .lscontainer {
-    width: auto;
-    height: 30%;
-    display: block;
-  }
+.lessonTitle h1 {
+  font-family: "Inter";
+  font-weight: bolder;
+  font-size: 30px;
+  color: #136129;
+}
 
-  .lscontainer .lessonDscrpt {
-    position: relative;
-    width: 48%;
-    height: auto;
-    margin: 0px 20px 0px 0px;
-    float: left;
-  }
+.lesson-container .lessonBody {
+  position: relative;
+  width: auto;
+  height: 80%;
+}
 
-  .lessonDscrpt p {
-    margin: 0;
-    font-family: 'Inter';
-    font-weight: bolder;
-    font-size: 20px;
-    color: #136129;
-    text-align: justify;
-  }
+.lessonBody .lscontainer {
+  width: auto;
+  height: 30%;
+  display: block;
+}
 
-  .lscontainer .lessonImg {
-    width: 49%;
-    height: auto;
-    float: left;
-  }
+.lscontainer .lessonDscrpt {
+  position: relative;
+  width: 48%;
+  height: auto;
+  margin: 0px 20px 0px 0px;
+  float: left;
+}
 
-  .lessonImg img {
-    margin: 0;
-    width: 100%;
-    height: auto;
-    border: #136129 dashed 2px;
-  }
+.lessonDscrpt p {
+  margin: 0;
+  font-family: "Inter";
+  font-size: 20px;
+  color: #136129;
+  text-align: justify;
+  z-index: 1;
+}
 
-  .lessonBody .topics {
-    position: relative;
-    display: block;
-    width: auto;
-    height: 70%;
-  }
+.lscontainer .lessonImg {
+  width: 49%;
+  height: auto;
+  float: left;
+  margin-bottom: 4px;
+  z-index: 2;
+}
 
-  .topics .topicTitle1 {
-    font-family: 'Inter';
-    font-weight: bolder;
-    font-size: 30px;
-    color: #136129;
-  }
+.lessonImg #electronegativity {
+  width: 100%;
+  height: auto;
+}
 
-  .topics p {
-    margin: 0;
-    font-family: 'Inter';
-    font-weight: bolder;
-    font-size: 20px;
-    color: #136129;
-    text-align: justify;
-  }
+.lessonImg img {
+  margin: 0;
+  width: 100%;
+  height: 45vh;
+  border: #136129 dashed 2px;
+}
 
-  .lesson-container .lessonFunction {
-    position: relative;
-    width: auto;
-    height: 10%;
-    top: 500px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+.lessonImg a {
+  position: relative;
+  text-decoration: none;
+  color: #136129;
+  z-index: 3;
+}
 
-  .lessonFunction button {
-    color: #136129;
-    font-weight: bold;
-    font-size: 15px;
-    font-family: 'Inter';
-    background-color: #9BF0B8;
-    border: none;
-    border-radius: 9px;
-    padding: 18px;
-    width: 130px;
-    cursor: pointer;
-    margin: 7px;
-    margin-bottom: 50px;
-  }
+.lessonBody .topics {
+  position: relative;
+  display: block;
+  width: auto;
+  height: 70%;
+}
 
-  .lessonFunction #previous {
-    float: right;
-    margin-right: 40px;
-  }
+.topics .topicTitle {
+  font-family: "Inter";
+  font-weight: bolder;
+  font-size: 30px;
+  color: #136129;
+}
 
+.topics p {
+  margin: 0;
+  font-family: "Inter";
+  font-size: 20px;
+  color: #136129;
+  text-align: justify;
+  z-index: 0;
+}
 
+#center {
+  text-align: center;
+}
+
+p .top {
+  left: 0.3em;
+  top: -0.5em;
+  margin-left: -1em;
+  position: relative;
+}
+
+.topics .list-container {
+  width: 100%;
+  height: 190px;
+}
+
+.list-container .list {
+  position: relative;
+  display: block;
+  margin: 0;
+  font-family: "Inter";
+  font-size: 20px;
+  color: #136129;
+  line-height: 10px;
+  width: 20%;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+.list-container .list2 {
+  position: relative;
+  display: block;
+  margin: 0;
+  font-family: "Inter";
+  font-size: 20px;
+  color: #136129;
+  width: 45%;
+  height: auto;
+  float: left;
+  margin-right: 0px;
+  margin-bottom: 30px;
+}
+
+ul h4 {
+  margin: 10px;
+}
+
+.topics #ul2 {
+  width: 30%;
+}
+
+.topics #ul3 {
+  width: 35%;
+}
+
+.list li {
+  line-height: 30px;
+}
+
+table {
+  margin-top: 10px;
+}
+
+table, th, td {
+  border:1px solid #136129;
+  color: #136129;
+  font-family: "Inter";
+  text-align: center;
+}
+
+.lesson-container .lessonFunction {
+  position: absolute;
+  width: auto;
+  height: 10%;
+  top: 583vh;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+}
+
+.lessonFunction button {
+  color: #136129;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Inter";
+  background-color: #9bf0b8;
+  border: none;
+  border-radius: 9px;
+  padding: 18px;
+  width: 130px;
+  cursor: pointer;
+  margin: 7px;
+  margin-bottom: 50px;
+}
+
+.lessonFunction #previous {
+  float: right;
+  margin-right: 40px;
+}
