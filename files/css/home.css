@@ -106,15 +106,6 @@ label {
     display: inline;
   }
 
-  /* .main-container .slideImg {
-    display: none;
-    width: 95%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    border-radius: 30px;
-  } */
 
   .slideshow .slideImg {
     position: relative;
@@ -125,7 +116,10 @@ label {
     border-radius: 30px;
     padding: 5px;
     border: #388624 dashed 2px;
-    top: 30px;
+    top: 15px;
+    bottom: 15px;
+    left: 5px;
+    right: 10px;
   }
 
   .main-container .sidebar {
