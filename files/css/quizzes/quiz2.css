@@ -241,6 +241,10 @@ body {
   cursor: pointer;
 }
 
+.radio-container #htxt {
+  margin-top: 10px;
+}
+
 .custom-radio {
   position: absolute;
   top: 0;
@@ -332,7 +336,7 @@ body {
   cursor: pointer;
   margin: 10px;
   position: absolute;
-  top: 346%;
+  top: 342%;
   left: 38.8%;
   box-shadow: 1px 1px 5px #53a055;
 }
@@ -352,7 +356,7 @@ body {
   cursor: pointer;
   margin: 10px;
   position: absolute;
-  top: 346%;
+  top: 342%;
   left: 38.8%;
   box-shadow: 1px 1px 5px #53a055;
 }
