@@ -29,12 +29,15 @@
             </div>
     
             <div class="search-container">
-              <label>
-                <i class="material-icons" id="search">search</i>
-                <input type="text" placeholder="Search" name="search" />
-              </label>
+              <div class="search-input">
+                <a href="" target="_blank" hidden></a>
+                <input id="search" type="text" placeholder="Search" onchange="openPage()">
+                <div class="autocom-box">
+                </div>
+                <div class="icon"><i id="search" class="material-icons" onclick="openPage()">search</i></div>
+              </div>
             </div>
-          </div>
+            </div>
 
           <!-- Main -->
           <div class="main-container">
@@ -71,7 +74,7 @@
 
                       <br>
 
-                      <h1 class="topicTitle">Physical and Chemical Changes</h1>
+                      <h1 id="ls5t1" class="topicTitle">Physical and Chemical Changes</h1>
 
                         <p>As with the properties of a substance, the changes that substances undergo can be classified as either physical or chemical. During physical changes a substance changes its physical appearance but not its composition. The evaporation of water is a physical change. When water evaporates, it changes from the liquid state to the gas state, but its composition does not change; it is still water. All changes of state (for example, from liquid to gas or from liquid to solid) are physical changes.</p>
 
@@ -96,13 +99,13 @@
 
                         <p>While reading a textbook of chemistry, I came upon the statement "nitric acid acts upon copper," and I determined to see what this meant. Having located some nitric acid, I had only to learn what the words "act upon" meant. In the interest of knowledge I was even willing to sacrifice one of the few copper cents then in my possession. I put one of them on the table, opened a bottle labeled "nitric acid," poured some of the liquid on the copper, and prepared to make an observation. But what was this wonderful thing which I beheld? The cent was already changed, and it was no small change either. A greenish-blue liquid foamed and fumed over the cent and over the table. The air became colored dark red. How could I stop this? I tried by picking the cent up and throwing it out the window. I learned another fact nitric acid acts upon fingers. The pain led to another unpremeditated experiment. I drew my fingers across my trousers and discovered nitric acid acts upon trousers. That was the most impressive experiment I have ever performed. I tell of it even now with interest. It was a revelation to me. Plainly the only way to learn about such remarkable kinds of action is to see the results, to experiment, to work in the laboratory.</p>
 
-                        <h1 class="topicTitle">Units of Measurement</h1>
+                        <h1 id="ls5t2" class="topicTitle">Units of Measurement</h1>
 
                         <p>Many properties of matter are quantitative; that is, they are associated with num¬bers. When a number represents a measured quantity, the units of that quantity must always be specified. To say that the length of a pencil is 17.5 is meaningless. To say that it is 17.5 centimeters (cm) properly specifies the length. The units used for scientific measurements are those of the metric system.</p>
 
                         <br>
 
-                        <h1 class="topicTitle">A Closer Look - The Scientific Method</h1>
+                        <h1 id="ls5t3" class="topicTitle">A Closer Look - The Scientific Method</h1>
 
                         <p>Chemistry is an experimental science. The idea of using experiments to understand nature seems like such a natural pattern of thought to us now, but there was a time, before the seventeenth century, when experiments were rarely used. The ancient Greeks, for example, did not rely on experiments to test their ideas.
                         </p>
@@ -152,5 +155,6 @@
           </div>
 
     </div>
+    <script src="../../js/search2.js"></script>
 </body>
 </html>

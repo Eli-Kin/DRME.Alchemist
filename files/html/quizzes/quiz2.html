@@ -34,10 +34,13 @@
         </div>
 
         <div class="search-container">
-          <label class="label">
-            <i class="material-icons" id="search">search</i>
-            <input type="text" placeholder="Search" name="search" />
-          </label>
+          <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input id="search" type="text" placeholder="Search" onchange="openPage()">
+            <div class="autocom-box">
+            </div>
+            <div class="icon"><i id="search" class="material-icons" onclick="openPage()">search</i></div>
+          </div>
         </div>
       </div>
 
@@ -613,7 +616,7 @@
                         value="d"
                       /><span class="custom-radio"></span>
                       <span class="wrong">&#10006;</span>
-                      <header>Electron</header></label
+                      <header>Electronic</header></label
                     >
                   </div>
                 </div>
@@ -731,6 +734,7 @@
 
       
     </div>
+    <script src="../../js/search2.js"></script>
     <script src="../../js/quiz.js"></script>
   </body>
 </html>

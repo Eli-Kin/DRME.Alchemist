@@ -29,12 +29,15 @@
             </div>
     
             <div class="search-container">
-              <label>
-                <i class="material-icons" id="search">search</i>
-                <input type="text" placeholder="Search" name="search" />
-              </label>
+              <div class="search-input">
+                <a href="" target="_blank" hidden></a>
+                <input id="search" type="text" placeholder="Search" onchange="openPage()">
+                <div class="autocom-box">
+                </div>
+                <div class="icon"><i id="search" class="material-icons" onclick="openPage()">search</i></div>
+              </div>
             </div>
-          </div>
+            </div>
 
           <!-- Main -->
           <div class="main-container">
@@ -62,7 +65,7 @@
 
                     <div class="topics">
 
-                        <h1 class="topicTitle">Molecules and Chemical Formulas</h1>
+                        <h1 id="ls3t1" class="topicTitle">Molecules and Chemical Formulas</h1>
 
                         <p>Many elements are found in nature in molecular form; that is, two or more of the same type of atom are bound together. For example, the oxygen normally found in air consists of molecules that contain two oxygen atoms. We represent this molecular form of oxygen by the <b>chemical formula</b> 02 (read "oh two"). The subscript in the formula tells us that two oxygen atoms are present in each molecule. Any molecule that is made up of two atoms is said to be a diatomic molecule. Oxygen also exists in another molecular form known as ozone. Molecules of ozone consist of three oxygen atoms, so its chemical formula is 03. Even though "normal" oxygen (02) and ozone are both composed only of oxygen atoms, they exhibit very different chemical and physical properties. For exam¬ple, 02 is essential for life, but 03 is toxic; 02 is odorless, whereas 03 has a sharp, pungent smell</p>
 
@@ -95,7 +98,7 @@
                       </p>
 
                       <div class="sect1">
-                        <h1 class="topicTitle">Molecular and Empirical Formulas</h1>
+                        <h1 id="ls3t2" class="topicTitle">Molecular and Empirical Formulas</h1>
                         <p>Chemical formulas that indicate the actual numbers and types of atoms in a molecule are called <b>molecular formulas</b>. (The formulas in Figure 2.16 are molecular formulas.) Chemical formulas that give only the relative number of atoms of each type in a molecule are called empirical formulas. The subscripts in an empirical formula are always the smallest whole-number ratios. For example, the molecular formula for hydrogen peroxide is H202; its empirical formula is HO. The molecular formula for ethylene is C2H4; its empirical formula is CH2. For many substances, the molecular formula and the empirical formula are identical, as in the case of water, H20.</p>
 
                         <br>
@@ -113,7 +116,7 @@
 
                       <br>
 
-                      <h1 class="topicTitle">Picturing Molecules</h1>
+                      <h1 ls3t3 class="topicTitle">Picturing Molecules</h1>
                       <p>The molecular formula of a substance summarizes its composition but does not show how the atoms come together to form the molecule. The structural formula of a substance shows which atoms are attached to which within the molecule.</p>
 
                       <br>
@@ -143,5 +146,6 @@
           </div>
 
     </div>
+    <script src="../../js/search2.js"></script>
 </body>
 </html>

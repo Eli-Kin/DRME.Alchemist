@@ -1,14 +1,17 @@
 body {
     margin: 0;
+    background-color: #B7EBBC;
 }
+
+/* Top Nav */
 
 .topnav {
     position: relative;
     background-color: #ffffff;
-    overflow: hidden;
+    overflow: visible;
     box-shadow: 0px 0px 1px ;
     z-index: 1;
-    height: 10%;
+    height: 9vh;
 }
 
 .topnav img {
@@ -34,48 +37,93 @@ body {
     color: #388624;
 }
 
-.search-container {
-    padding: 15px;
+.search-container{
+  max-width: 450px;
+  margin: 0px auto;
 }
 
-.search-container ::placeholder {
-    color: #388624;
-    overflow: auto;
+.search-container .search-input{
+  background-color: #dbeafe;
+  width: 380px;
+  border-radius: 5px;
+  position: relative;
+  top: 11px;
+  left: 39vw;
+
 }
 
-.search-container i {
+.search-input input{
+  height: 45px;
+  width: 300px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 16px;
+  background-color: #dbeafe;
+  color: #136129;
+}
+
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box{
+  position: absolute;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  width: 23vw;
+  max-height: 280px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+}
+
+.search-input .autocom-box::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+  color: #136129;
+  font-family: "Inter";
+}
+
+.search-input.active .autocom-box li{
+  display: block;
+}
+.autocom-box li:hover{
+  background: #efefef;
+}
+
+.search-input .icon{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #136129;
   cursor: pointer;
 }
 
-.search-container i:hover {
-  background-color:#4ea039;
-  border-radius: 50%;
-  color: #dbeafe;
-}
-
-label {
-    float: right;
-    width: 300px;
-    display: grid;
-    grid-template: 1fr / auto 1fr;
-    gap: 12px;
-    border: 1px solid #CFD5DB;
-    border-radius: 5px;
-    background: #dbeafe;
-    padding: 7px;
-    color: #388624;
-    cursor: text;
-  }
-  
-  label:focus-within {
-    border: 1px solid #136129;
-  }
-  
-  label>input {
-    outline: none;
-    border: none;
-    background: transparent;
-  }
+/* End of Top Nav */
 
   .main-container {
     position: absolute;
@@ -132,9 +180,17 @@ label {
     border: none;
     border-radius: 9px;
     padding: 18px;
-    width: 130px;
+    width: 150px;
+    border: #388624 dashed 1px;
     cursor: pointer;
-    margin: 20px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  .intro button:hover {
+    background-color: #39b15b;
+    color: white;
+    border: none;
+    
   }
 
 

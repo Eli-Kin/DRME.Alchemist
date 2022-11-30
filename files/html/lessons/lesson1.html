@@ -30,10 +30,13 @@
 
     
             <div class="search-container">
-              <label>
-                <i class="material-icons" id="search">search</i>
-                <input type="text" placeholder="Search" name="search" />
-              </label>
+              <div class="search-input">
+                <a href="" target="_blank" hidden></a>
+                <input id="search" type="text" placeholder="Search" onchange="openPage()">
+                <div class="autocom-box">
+                </div>
+                <div class="icon"><i id="search" class="material-icons" onclick="openPage()">search</i></div>
+              </div>
             </div>
           </div>
 
@@ -63,7 +66,7 @@
 
                     <div class="topics">
 
-                        <h1 class="topicTitle">States of Matter</h1>
+                        <h1 id="ls1t1" class="topicTitle">States of Matter</h1>
 
                         <p>A sample of matter can be a gas, a liquid, or a solid. These three forms of matter are called the states of matter. The <b>states of matter</b> differ in some of their simple observable properties. A <b>gas</b> (also known as vapor) has no fixed volume or shape; rather, it conforms to the volume and shape of its container. A gas can be com-pressed to occupy a smaller volume, or it can expand to occupy a larger one. A <b>liquid</b> has a distinct volume independent of its container but has no specific shape. It assumes the shape of the portion of the container that it occupies. A <b>solid</b> has both a definite shape and a definite volume; it is rigid. Neither liquids nor solids can be compressed to any appreciable extent.</p>
 
@@ -81,7 +84,7 @@
                           <cite><a href="https://www.google.com/url?sa=i&url=http%3A%2F%2Floretoscience.weebly.com%2Fatoms-elements-and-compounds.html&psig=AOvVaw28xvSg-RZvR4NIhMLeQOpP&ust=1669263347394000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCODSutm4w_sCFQAAAAAdAAAAABAl">http://loretoscience.weebly.com/uploads/7/0/7/1/7071552/9580935.jpg?1318365183</a></cite>
                         </div>
 
-                        <h1 class="topicTitle">Pure Substances and Mixtures</h1>
+                        <h1 id="ls1t2" class="topicTitle">Pure Substances and Mixtures</h1>
 
                         <p>Most forms of matter that we encounter—for example, the air we breathe (a gas), gasoline for cars (a liquid), and the sidewalk on which we walk (a solid)—are not chemically pure. We can, however, resolve, or separate, these kinds of matter into different pure substances. A <b>pure substance</b> (usually referred to simply as a substance) is matter that has a fixed composition and distinct properties. For example, water and ordinary table salt (sodium chloride), the primary-components of seawater, are pure substances.</p>
 
@@ -111,5 +114,6 @@
           </div>
 
     </div>
+    <script src="../../js/search2.js"></script>
 </body>
 </html>

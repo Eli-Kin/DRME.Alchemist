@@ -96,120 +96,122 @@ function Select() {
 function openPage() {
   var search = document.getElementById("search").value;
 
-  if (search.toLowerCase() === suggestions[0].toLowerCase()) {
-    location.href = "../html/home.html";
+  if (search.toLowerCase() === suggestions[0].toLowerCase()){
+    location.href = "../../html/home.html";
   }
 
-  if (search.toLowerCase() === suggestions[1].toLowerCase()) {
-    location.href = "../html/lessons/lesson1.html";
+  if (search.toLowerCase() === suggestions[1].toLowerCase()){
+    location.href = "../lessons/lesson1.html";
   }
 
-  if (search.toLowerCase() === suggestions[2].toLowerCase()) {
-    location.href = "../html/lessons/lesson1.html#ls1t1";
+  if (search.toLowerCase() === suggestions[2].toLowerCase()){
+    location.href = "../lessons/lesson1.html#ls1t1";
   }
 
   if (search.toLowerCase() === suggestions[3].toLowerCase()) {
-    location.href = "../html/lessons.html";
+    location.href = "../../html/lessons.html";
   }
 
   if (search.toLowerCase() === suggestions[4].toLowerCase()) {
-    location.href = "../html/quiz.html";
+    location.href = "../../html/quiz.html";
   }
 
   if (search.toLowerCase() === suggestions[5].toLowerCase()) {
-    location.href = "../html/aboutUs.html";
+    location.href = "../../html/aboutUs.html";
   }
 
   if (search.toLowerCase() === suggestions[6].toLowerCase()) {
-    location.href = "../html/lessons/lesson1.html#ls1t2";
+    location.href = "../lessons/lesson1.html#ls1t2";
   }
 
   if (search.toLowerCase() === suggestions[7].toLowerCase()) {
-    location.href = "../html/lessons/lesson2.html";
+    location.href = "../lessons/lesson2.html";
   }
 
   if (search.toLowerCase() === suggestions[8].toLowerCase()) {
-    location.href = "../html/lessons/lesson2.html#ls2t1";
+    location.href = "../lessons/lesson2.html#ls2t1";
   }
 
   if (search.toLowerCase() === suggestions[9].toLowerCase()) {
-    location.href = "../html/lessons/lesson3.html";
+    location.href = "../lessons/lesson3.html";
   }
 
   if (search.toLowerCase() === suggestions[10].toLowerCase()) {
-    location.href = "../html/lessons/lesson3.html#ls3t1";
+    location.href = "../lessons/lesson3.html#ls3t1";
   }
 
   if (search.toLowerCase() === suggestions[11].toLowerCase()) {
-    location.href = "../html/lessons/lesson3.html#ls3t2";
+    location.href = "../lessons/lesson3.html#ls3t2";
   }
 
   if (search.toLowerCase() === suggestions[12].toLowerCase()) {
-    location.href = "../html/lessons/lesson3.html#ls3t3";
+    location.href = "../lessons/lesson3.html#ls3t3";
   }
 
   if (search.toLowerCase() === suggestions[13].toLowerCase()) {
-    location.href = "../html/lessons/lesson4.html";
+    location.href = "../lessons/lesson4.html";
   }
 
   if (search.toLowerCase() === suggestions[14].toLowerCase()) {
-    location.href = "../html/lessons/lesson5.html";
+    location.href = "../lessons/lesson5.html";
   }
 
   if (search.toLowerCase() === suggestions[15].toLowerCase()) {
-    location.href = "../html/lessons/lesson5.html#ls5t1";
+    location.href = "../lessons/lesson5.html#ls5t1";
   }
 
   if (search.toLowerCase() === suggestions[16].toLowerCase()) {
-    location.href = "../html/lessons/lesson5.html#ls5t2";
+    location.href = "../lessons/lesson5.html#ls5t2";
   }
 
   if (search.toLowerCase() === suggestions[17].toLowerCase()) {
-    location.href = "../html/lessons/lesson5.html#ls5t3";
+    location.href = "../lessons/lesson5.html#ls5t3";
   }
 
   if (search.toLowerCase() === suggestions[18].toLowerCase()) {
-    location.href = "../html/lessons/lesson6.html";
+    location.href = "../lessons/lesson6.html";
   }
 
   if (search.toLowerCase() === suggestions[19].toLowerCase()) {
-    location.href = "../html/lessons/lesson6.html#ls6t1";
+    location.href = "../lessons/lesson6.html#ls6t1";
   }
 
   if (search.toLowerCase() === suggestions[20].toLowerCase()) {
-    location.href = "../html/lessons/lesson6.html#ls6t2";
+    location.href = "../lessons/lesson6.html#ls6t2";
   }
 
   if (search.toLowerCase() === suggestions[21].toLowerCase()) {
-    location.href = "../html/lessons/lesson6.html#ls6t3";
+    location.href = "../lessons/lesson6.html#ls6t3";
   }
 
   if (search.toLowerCase() === suggestions[22].toLowerCase()) {
-    location.href = "../html/lessons/lesson6.html#ls6t4";
+    location.href = "../lessons/lesson6.html#ls6t4";
   }
 
   if (search.toLowerCase() === suggestions[23].toLowerCase()) {
-    location.href = "../html/quizzes/quiz1.html";
+    location.href = "../quizzes/quiz1.html";
   }
 
   if (search.toLowerCase() === suggestions[24].toLowerCase()) {
-    location.href = "../html/quizzes/quiz2.html";
+    location.href = "../quizzes/quiz2.html";
   }
 
   if (search.toLowerCase() === suggestions[25].toLowerCase()) {
-    location.href = "../html/quizzes/quiz3.html";
+    location.href = "../quizzes/quiz3.html";
   }
 
   if (search.toLowerCase() === suggestions[26].toLowerCase()) {
-    location.href = "../html/quizzes/quiz4.html";
+    location.href = "../quizzes/quiz4.html";
   }
 
   if (search.toLowerCase() === suggestions[27].toLowerCase()) {
-    location.href = "../html/quizzes/quiz5.html";
+    location.href = "../quizzes/quiz5.html";
   }
 
   if (search.toLowerCase() === suggestions[28].toLowerCase()) {
-    location.href = "../html/quizzes/quiz6.html";
+    location.href = "../quizzes/quiz6.html";
   }
 
 }
+
+

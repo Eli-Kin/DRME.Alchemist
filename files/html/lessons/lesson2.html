@@ -34,12 +34,15 @@
         </div>
 
         <div class="search-container">
-          <label>
-            <i class="material-icons" id="search">search</i>
-            <input type="text" placeholder="Search" name="search" />
-          </label>
+          <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input id="search" type="text" placeholder="Search" onchange="openPage()">
+            <div class="autocom-box">
+            </div>
+            <div class="icon"><i id="search" class="material-icons" onclick="openPage()">search</i></div>
+          </div>
         </div>
-      </div>
+        </div>
 
       <!-- Main -->
       <div class="main-container">
@@ -126,7 +129,7 @@
 
                 <p>An illustration of the atom that incorporates the features we have just discussed is shown in Figure 2.11. The electrons, which take up most of the volume of the atom, play the major role in chemical reactions. The significance of representing the region containing the electrons as an indistinct cloud will be-come clear in later chapters when we consider the energies and spatial arrangements of the electrons.</p>
 
-                <h1 class="topicTitle">Isotopes, Atomic Numbers, and Mass Numbers</h1>
+                <h1 id="ls2t1" class="topicTitle">Isotopes, Atomic Numbers, and Mass Numbers</h1>
 
                 <p>What makes an atom of one element different from an atom of another element? The answer to this question centers on the number of protons in the nucleus of the atom: <i>All atoms of an element have the same number of protons in the nucleus</i>. The specific number of protons is different for different elements. Furthermore, be¬cause an atom has no net electrical charge, the number of electrons in it must equal its number of protons. For example, all atoms of the element carbon have six protons and six electrons. Most carbon atoms also have six neutrons, although some have more and some have less.</p>
 
@@ -173,5 +176,6 @@
         </div>
       </div>
     </div>
+    <script src="../../js/search2.js"></script>
   </body>
 </html>

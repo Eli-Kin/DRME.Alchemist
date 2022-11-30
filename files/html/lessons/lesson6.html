@@ -32,12 +32,15 @@
             </div>
     
             <div class="search-container">
-              <label>
-                <i class="material-icons" id="search">search</i>
-                <input type="text" placeholder="Search" name="search" />
-              </label>
+              <div class="search-input">
+                <a href="" target="_blank" hidden></a>
+                <input id="search" type="text" placeholder="Search" onchange="openPage()">
+                <div class="autocom-box">
+                </div>
+                <div class="icon"><i id="search" class="material-icons" onclick="openPage()">search</i></div>
+              </div>
             </div>
-          </div>
+            </div>
 
           <!-- Main -->
           <div class="main-container">
@@ -70,7 +73,7 @@
 
                         <p>shared equally between two atoms. In a polar covalent bond one of the atoms exerts a greater attraction for the bonding electrons than the other. If the difference in relative ability to attract electrons is large enough, an ionic bond is formed.</p>
 
-                      <h1 class="topicTitle">Electronegativity</h1>
+                      <h1 id="ls6t1" class="topicTitle">Electronegativity</h1>
 
                         <p>We use a quantity called electronegativity to estimate whether a given bond will be nonpolar covalent, polar covalent, or ionic. Electronegativity is defined as the ability of an atom in a molecule to attract electrons to itself. The greater an atom's electronegativity, the greater is its ability to attract electrons to itself. The electronegativity of an atom in a molecule is related to its ionization energy and electron affinity, which are properties of isolated atoms. The ionization energy measures how strongly an atom holds on to its electrons. Likewise, the electron affinity is a measure of how strongly an atom attracts additional electrons. An atom with a very negative electron affinity and high ionization energy will both attract electrons from other atoms and resist having its electrons attracted away; it will be highly electronegative.</p>
 
@@ -93,7 +96,7 @@
                             >
                           </div>
 
-                          <h1 class="topicTitle">Electronegativity and Bond Polarity</h1>
+                          <h1 id="ls6t2" class="topicTitle">Electronegativity and Bond Polarity</h1>
                           
                           <p>We can use the difference in electronegativity between two atoms to gauge the polarity of the bonding between them. Consider these three fluorine-containing compounds:</p>
 
@@ -136,7 +139,7 @@
 
                           <p>As these examples illustrate, the greater the difference in electronegativity between two atoms, the more polar their bond. The nonpolar covalent bond lies at one end of a continuum of bond types, and the ionic bond lies at the other end. In between is a broad range of polar covalent bonds, differing in the extent to which there is unequal sharing of electrons.</p>
 
-                          <h1 class="topicTitle">Dipole Moments</h1>
+                          <h1 id="ls6t3" class="topicTitle">Dipole Moments</h1>
 
                           <p>As we have just seen, there is a difference in electronegativity between H and F, which leads to a polar covalent bond in the HF molecule. As a consequence, there is a concentration of negative charge on the more electronegative F atom, leaving the less electronegative H atom at the positive end of the molecule. A molecule such as HF in which the centers of positive and negative charge do not coincide is said to be a polar molecule. Thus, we not only describe bonds as polar and nonpolar, but we also describe entire molecules this way as well.</p>
 
@@ -209,7 +212,7 @@
                             </tr>
                           </table>
 
-                          <h1 class="topicTitle">Bond Types and Nomenclature</h1>
+                          <h1 id="ls6t4" class="topicTitle">Bond Types and Nomenclature</h1>
 
                           <p>There are two general approaches to naming binary compounds (compounds composed of two elements): one used for ionic compounds and the other for molecular ones. It is important to recognize now that in both approaches, the name of the less electronegative element is given first. The name of the more electronegative element then follows, modified to have an -ide ending. You will recall that compounds that are ionic are given names based on their component ions, including the charge of the cation if it is variable. Those that are molecular are named using the prefixes to indicate the number of atoms of each kind in the substance:</p>
 
@@ -249,5 +252,6 @@
           </div>
 
     </div>
+    <script src="../../js/search2.js"></script>
 </body>
 </html>

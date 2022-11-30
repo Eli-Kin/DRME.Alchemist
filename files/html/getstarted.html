@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@300&display=swap" rel="stylesheet">
 
+    
 </head>
 <body>
     <div class = "gtsrt">
@@ -22,15 +23,18 @@
         <div class="name">
           <a href="../html/getstarted.html">DRME.Alchemist</a>
         </div>
-            <div class="search-container">
-                <label>
-                    <i class="material-icons" id="search" onclick="">search</i>
-                    <input type="text" placeholder="Search" name="search">
-                </label>
-                  
-            </div>
 
+                <div class="search-container">
+                    <div class="search-input">
+                      <a href="" target="_blank" hidden></a>
+                      <input id="search" type="text" placeholder="Search" onchange="openPage()">
+                      <div class="autocom-box">
+                      </div>
+                      <div class="icon"><i id="search" class="material-icons" onclick="openPage()">search</i></div>
+                    </div>
+                  </div>
         </div>
+
 
         <!-- Main -->
         <div class="main-container">
@@ -47,7 +51,10 @@
 
         </div>
 
+    </div>
+
 
     </div>
+    <script src="../js/search.js"></script>
 </body>
 </html>
