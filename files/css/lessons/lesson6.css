@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #b7ebbc;
 }
 
 /* Top Nav */
@@ -359,12 +360,12 @@ table, th, td {
 }
 
 .lesson-container .lessonFunction {
-  position: absolute;
+  position: relative;
   width: auto;
   height: 10%;
-  top: 583vh;
+  top: 5vh;
   bottom: 0;
-  left: 20px;
+  left: 0;
   right: 0;
 }
 
@@ -372,8 +373,8 @@ table, th, td {
   color: #136129;
   font-weight: bold;
   font-size: 15px;
-  font-family: "Inter";
-  background-color: #9bf0b8;
+  font-family: 'Inter';
+  background-color: #9BF0B8;
   border: none;
   border-radius: 9px;
   padding: 18px;
@@ -381,6 +382,11 @@ table, th, td {
   cursor: pointer;
   margin: 7px;
   margin-bottom: 50px;
+}
+
+.lessonFunction button:hover {
+  background-color: #39b15b;
+  color: white;
 }
 
 .lessonFunction #previous {

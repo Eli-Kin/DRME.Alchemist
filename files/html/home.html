@@ -38,7 +38,7 @@
         <div class="option">
           <a href="../html/home.html" class="opt1">Homepage</a>
           <a href="../html/lessons.html" class="opt2">Lessons</a>
-          <a href="../html/quiz.html" class="opt3">Quiz</a>
+          <a href="../html/quiz.html" class="opt3">Quizzes</a>
           <a href="../html/aboutUs.html" class="opt4">About Us</a>
         </div>
 
@@ -55,13 +55,8 @@
 
       <!-- Main -->
       <div class="main-container">
-        <div class="slideshow">
-          <img class="slideImg" src="../img/Iceberg.jpg" />
-          <img class="slideImg" src="../img/bond.png" />
-          <img class="slideImg" src="../img/elements.png" />
-          <img class="slideImg" src="../img/molecular.png" />
-          <img class="slideImg" src="../img/laboratory.png" />
-          <img class="slideImg" src="../img/universe.png" />
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLexagO6P8kJec6frUBPaFyG1tDLcsA5S5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="chemVid"></iframe>
         </div>
 
         <div class="sidebar">
@@ -130,24 +125,5 @@
 
     <script src="../js/home.js"></script>
 
-    <script>
-      //Slideshow
-      var MyImg = 0;
-      slideShow();
-
-      function slideShow() {
-        var i;
-        var showImg = document.getElementsByClassName("slideImg");
-        for (i = 0; i < showImg.length; i++) {
-          showImg[i].style.display = "none";
-        }
-        MyImg++;
-        if (MyImg > showImg.length) {
-          MyImg = 1;
-        }
-        showImg[MyImg - 1].style.display = "block";
-        setTimeout(slideShow, 4000);
-      }
-    </script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #b7ebbc;
 }
 
 /* Top Nav */
@@ -238,8 +239,8 @@ cursor: pointer;
   z-index: 5;
 }
 
- button:hover > .cancel {
-  background-color: #278a43;
+ .cancel button:hover {
+  background-color: #4CAF50;
   color: white;
 }
 
@@ -388,10 +389,6 @@ cursor: pointer;
   float: right;
 }
 
-.quizBody .question10 {
-  margin-bottom: 30px;
-}
-
 #btn {
   color: #136129;
   font-weight: bold;
@@ -405,21 +402,21 @@ cursor: pointer;
   width: 250px;
   cursor: pointer;
   margin: 10px;
-  position: absolute;
+  position: relative;
   top: 364%;
   left: 38.8%;
   box-shadow: 1px 1px 5px #53a055;
+  display: block;
 }
 
 #btn:hover {
-  background-color: #278a43;
+  background-color: #4CAF50;
   color: white;
 }
 
 #btn2 {
   color: #136129;
   font-weight: bold;
-  display: none;
   font-size: 15px;
   font-family: "Inter";
   background-color: #9bf0b8;
@@ -430,14 +427,15 @@ cursor: pointer;
   width: 250px;
   cursor: pointer;
   margin: 10px;
-  position: absolute;
+  position: relative;
   top: 364%;
   left: 38.8%;
   box-shadow: 1px 1px 5px #53a055;
+  display: none;
 }
 
 #btn2:hover {
-  background-color: #278a43;
+  background-color: #4CAF50;
   color: white;
 }
 

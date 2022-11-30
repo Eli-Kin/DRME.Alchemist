@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #b7ebbc;
 }
 
 /* Top Nav */
@@ -162,7 +163,7 @@ cursor: pointer;
 .main-container .developer {
   overflow: hidden;
   width: 1200px;
-  height: 400px;
+  height: 480px;
   background-color: #93d7aa;
   position: absolute;
   top: 0;
@@ -170,6 +171,7 @@ cursor: pointer;
   left: 0;
   right: 0;
   margin: auto;
+  margin-top: 30px;
   border: #136129 dashed 1px;
 }
 
@@ -180,7 +182,7 @@ cursor: pointer;
 .dev-container .dev-description {
   position: relative;
   width: 92%;
-  height: 280px;
+  height: 330px;
   top: 0;
   bottom: 220px;
   left: 0;
@@ -213,13 +215,15 @@ cursor: pointer;
   width: 85%;
   top: 195px;
   bottom: 0px;
-  left: 125px;
+  left: 0px;
   right: 0px;
   margin: auto;
 }
 
 .dev-name .dev {
-  width: 20%;
+  width: 23%;
+  height: 35vh;
+  max-height: 50vh;
   margin: 0px 10px 0px 10px;
   float: left;
   background-color: #dfffe2;
@@ -227,12 +231,22 @@ cursor: pointer;
   border-radius: 3px;
 }
 
+/* .dev .line {
+  border-top: #388624 dotted 2px;
+} */
+
 .dev h5 {
   font-family: 'Inter';
   font-weight: bold;
   color: #136129;
-  padding: 0px 20px 0px 20px;
+  padding: 20px;
+  font-size: 15px;
+  margin: 0px;
 }
+
+/* .dev #cntct {
+  margin: 0;
+} */
 
 .dev #initial {
   margin: 0;
@@ -240,11 +254,12 @@ cursor: pointer;
   font-size: 30px;
   color: #136129;
   padding: 0px 20px 0px 20px;
+  margin: 0;
 }
 
 .dev p {
   font-family: 'Inter';
-  font-size: 12px;
+  font-size: 12.5px;
   color: #136129;
   padding: 0px 20px 0px 20px;
 }

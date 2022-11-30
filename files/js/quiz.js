@@ -511,9 +511,9 @@ function results() {
   var correct = document.getElementsByClassName("correct");
   var wrong = document.getElementsByClassName("wrong");
   var tryAgain = document.getElementById("btn2");
+  var submit = document.getElementById("btn");
   var takeAgain = document.getElementById("popUp3");
   var cancel = document.getElementById("btnCancel");
-  var results = document.getElementById("results");
   var q1 = document.querySelector('input[name="q1"]:checked');
   var q2 = document.querySelector('input[name="q2"]:checked');
   var q3 = document.querySelector('input[name="q3"]:checked');
@@ -9243,6 +9243,7 @@ function results() {
   }
 
   tryAgain.style.display = "block";
+  submit.style.display = "none";
 }
 
 function test() {

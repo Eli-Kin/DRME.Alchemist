@@ -174,13 +174,14 @@ body {
   .intro button {
     color: #136129;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 17px;
     font-family: 'Inter';
     background-color: #9BF0B8;
     border: none;
     border-radius: 9px;
     padding: 18px;
-    width: 150px;
+    width: 170px;
+    height: 60px;
     border: #388624 dashed 1px;
     cursor: pointer;
     margin: 10px 0px 0px 0px;

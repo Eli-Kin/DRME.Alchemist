@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #b7ebbc;
 }
 
 /* Top Nav */
@@ -202,6 +203,7 @@ cursor: pointer;
   height: 10%;
   float: left;
   margin-bottom: 25px;
+  z-index: 4;
 }
 
 .quizTitle h1 {
@@ -213,6 +215,7 @@ cursor: pointer;
   width: 30%;
   height: 10%;
   float: right;
+  z-index: 4;
 }
 
 .cancel button{
@@ -234,6 +237,11 @@ cursor: pointer;
   position: relative;
   box-shadow: 1px 1px 5px #53a055;
   z-index: 5;
+}
+
+.cancel button:hover {
+  background-color: #4CAF50;
+  color: white;
 }
 
 .quizTitle h1 {
@@ -381,10 +389,6 @@ cursor: pointer;
   float: right;
 }
 
-.quizBody .question10 {
-  margin-bottom: 30px;
-}
-
 #btn {
   color: #136129;
   font-weight: bold;
@@ -398,7 +402,7 @@ cursor: pointer;
   width: 250px;
   cursor: pointer;
   margin: 10px;
-  position: absolute;
+  position: relative;
   top: 349%;
   left: 38.8%;
   box-shadow: 1px 1px 5px #53a055;
@@ -418,10 +422,20 @@ cursor: pointer;
   width: 250px;
   cursor: pointer;
   margin: 10px;
-  position: absolute;
+  position: relative;
   top: 349%;
   left: 38.8%;
   box-shadow: 1px 1px 5px #53a055;
+}
+
+#btn:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#btn2:hover {
+  background-color: #4CAF50;
+  color: white;
 }
 
 .spacer {

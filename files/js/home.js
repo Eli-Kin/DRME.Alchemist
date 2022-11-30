@@ -8,10 +8,22 @@ facts[4] = "Oxygen gas has no color. But solid or liquid oxygen appears to be bl
 facts[5] = "It is not possible to freeze helium by exposing it to a low temperature. Intense pressure has to be applied to freeze it."
 facts[6] = "J is the only letter that is not present in the periodic table."
 
+//Slideshow the Facts
+var i = 0;
+var intervalId = setInterval(function() {
+  document.getElementById('theFacts').innerHTML = facts[i];
+  if (i == (facts.length - 1)) {
+    i = 0;
+  } else {
+    i++;
+  }
+}, 60000)
+
 //Randomize Trivia facts array
 var randomFacts = Math.floor(Math.random()*facts.length);
 var fact = facts[randomFacts]
 document.getElementById("theFacts").innerHTML = fact;
+
 
 //Quiz Question and Answer
 var quiz = [];

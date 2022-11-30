@@ -161,7 +161,7 @@ cursor: pointer;
     overflow: hidden;
   }
 
-  .main-container .slideshow {
+  .main-container .video {
     width: 50%;
     height: auto;
     float: left;
@@ -169,7 +169,8 @@ cursor: pointer;
   }
 
 
-  .slideshow .slideImg {
+  .video .chemVid {
+    background-color: #93D7AA;
     position: relative;
     width: 730px;
     height: 600px;
@@ -180,8 +181,8 @@ cursor: pointer;
     border: #388624 dashed 2px;
     top: 30px;
     bottom: 15px;
-    left: 5px;
-    right: 10px;
+    left: 15px;
+    right: 15px;
   }
 
   .main-container .sidebar {

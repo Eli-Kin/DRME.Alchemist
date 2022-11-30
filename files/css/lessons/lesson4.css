@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #b7ebbc;
 }
 
 /* Top Nav */
@@ -288,12 +289,12 @@ cursor: pointer;
     color: #136129;
     text-align: justify;
   }
-
+  
   .lesson-container .lessonFunction {
     position: relative;
     width: auto;
     height: 10%;
-    top: 310vh;
+    top: 5vh;
     bottom: 0;
     left: 0;
     right: 0;
@@ -314,6 +315,10 @@ cursor: pointer;
     margin-bottom: 50px;
   }
 
+  .lessonFunction button:hover {
+    background-color: #39b15b;
+    color: white;
+  }
 
   .lessonFunction #next {
     float: right;
