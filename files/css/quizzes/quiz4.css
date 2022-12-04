@@ -1,6 +1,9 @@
+
 body {
   margin: 0;
-  background-color: #b7ebbc;
+  height: 100%;
+  background: #b7ebbc;
+  overflow: hidden;
 }
 
 /* Top Nav */
@@ -9,9 +12,9 @@ body {
   position: relative;
   background-color: #ffffff;
   overflow: visible;
-  box-shadow: 0px 0px 1px ;
+  box-shadow: 0px 0px 1px;
   z-index: 1;
-  height: 9vh;
+  height: 4.5em;
 }
 
 .topnav img {
@@ -22,9 +25,9 @@ body {
 }
 
 .topnav .name {
-position: relative;
-float: left;
-margin-top: 0px;
+  position: relative;
+  float: left;
+  margin-top: 0px;
 }
 
 .name a {
@@ -32,16 +35,17 @@ margin-top: 0px;
   float: left;
   margin: 0px;
   padding-top: 15px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 30px;
   color: #388624;
 }
 
 .topnav .option {
-  position: absolute;
+  position: relative;
   margin-top: 24px;
-  left: 18vw;
-  right: 18vw;
+  float: left;
+  left: 13vw;
+  right: 10vw;
 }
 
 .option a {
@@ -56,98 +60,105 @@ margin-top: 0px;
   text-decoration: underline;
 }
 
-.option .opt1 {
-  margin-left: 260px;
+
+.checkbtn {
+  font-size: 30px;
+  color: #136129;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 }
 
-.option .opt2 {
-  text-decoration: none;
+#check {
+  display: none;
 }
 
-.search-container{
-max-width: 450px;
-margin: 0px auto;
+.search-container {
+  float: right;
+  max-width: 20em;
+  margin: 0px auto;
 }
 
-.search-container .search-input{
-background-color: #dbeafe;
-width: 380px;
-border-radius: 5px;
-position: relative;
-top: 11px;
-left: 39vw;
-
+.search-container .search-input {
+  background-color: #dbeafe;
+  width: 22em;
+  border-radius: 5px;
+  position: relative;
+  top: 0.8em;
+  right: 3em;
 }
 
-.search-input input{
-height: 45px;
-width: 300px;
-outline: none;
-border: none;
-border-radius: 5px;
-padding: 0 60px 0 20px;
-font-size: 16px;
-background-color: #dbeafe;
-color: #136129;
+.search-input input {
+  height: 45px;
+  width: 17.5em;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 16px;
+  background-color: #dbeafe;
+  color: #136129;
 }
 
-.search-input.active input{
-border-radius: 5px 5px 0 0;
+.search-input.active input {
+  border-radius: 5px 5px 0 0;
 }
 
-.search-input .autocom-box{
-position: absolute;
-padding: 0;
-opacity: 0;
-pointer-events: none;
-width: 23vw;
-max-height: 280px;
-overflow-y: auto;
-overflow-x: hidden;
-background-color: #fff;
-border-radius: 0 0 5px 5px;
+.search-input .autocom-box {
+  position: absolute;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  width: 21.5em;
+  max-height: 280px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
 }
 
 .search-input .autocom-box::-webkit-scrollbar {
-width: 0px;
-background: transparent; /* make scrollbar transparent */
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 
-.search-input.active .autocom-box{
-padding: 10px 8px;
-opacity: 1;
-pointer-events: auto;
+.search-input.active .autocom-box {
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.autocom-box li{
-list-style: none;
-padding: 8px 12px;
-display: none;
-width: 100%;
-cursor: default;
-border-radius: 3px;
-color: #136129;
-font-family: "Inter";
+.autocom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+  color: #136129;
+  font-family: "Inter";
 }
 
-.search-input.active .autocom-box li{
-display: block;
+.search-input.active .autocom-box li {
+  display: block;
 }
-.autocom-box li:hover{
-background: #efefef;
+.autocom-box li:hover {
+  background: #efefef;
 }
 
-.search-input .icon{
-position: absolute;
-right: 0px;
-top: 0px;
-height: 55px;
-width: 55px;
-text-align: center;
-line-height: 55px;
-font-size: 20px;
-color: #136129;
-cursor: pointer;
+.search-input .icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #136129;
+  cursor: pointer;
 }
 
 /* End of Top Nav */
@@ -156,14 +167,43 @@ cursor: pointer;
   position: absolute;
   background-color: #b7ebbc;
   width: 100%;
-  height: 90%;
+  height: 91%;
+  z-index: -2;
   overflow: hidden;
-  margin: 0;
-  z-index: -1;
 }
 
-.main-container .quiz-container {
+/* Menu */
+
+.main-container .menu {
   position: absolute;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  overflow: auto;
+  z-index: 2;
+}
+
+.menuOption a {
+  display: block;
+  text-decoration: none;
+  color: #136129;
+  text-align: center;
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.menuOption hr {
+  margin: 0;
+  border-top: #136129 1px dashed;
+}
+
+/* End of Menu */
+
+.main-container .quiz-container {
+  position: relative;
   background-color: #e5fce7;
   width: 70%;
   height: 100%;
@@ -174,6 +214,7 @@ cursor: pointer;
   right: 0;
   margin: auto;
   overflow-y: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   z-index: 1;
 }
@@ -239,7 +280,7 @@ cursor: pointer;
   z-index: 5;
 }
 
-.cancel button:hover {
+ .cancel button:hover {
   background-color: #4CAF50;
   color: white;
 }
@@ -399,19 +440,22 @@ cursor: pointer;
   border-radius: 5px;
   border: #136129 solid 1px;
   padding: 18px;
-  width: 250px;
+  width: 25%;
   cursor: pointer;
-  margin: 10px;
+  margin: auto;
   position: relative;
-  top: 333%;
-  left: 38.8%;
   box-shadow: 1px 1px 5px #53a055;
+  display: block;
+}
+
+#btn:hover {
+  background-color: #4CAF50;
+  color: white;
 }
 
 #btn2 {
   color: #136129;
   font-weight: bold;
-  display: none;
   font-size: 15px;
   font-family: "Inter";
   background-color: #9bf0b8;
@@ -419,18 +463,12 @@ cursor: pointer;
   border-radius: 5px;
   border: #136129 solid 1px;
   padding: 18px;
-  width: 250px;
+  width: 25%;
   cursor: pointer;
-  margin: 10px;
+  margin: auto;
   position: relative;
-  top: 333%;
-  left: 38.8%;
   box-shadow: 1px 1px 5px #53a055;
-}
-
-#btn:hover {
-  background-color: #4CAF50;
-  color: white;
+  display: none;
 }
 
 #btn2:hover {
@@ -444,34 +482,21 @@ cursor: pointer;
   background: transparent;
 }
 
-#yes {
-  position: relative;
-  color: #136129;
-  font-weight: bold;
-  font-size: 15px;
-  font-family: "Nunito";
-  background-color: #9bf0b8;
-  border: none;
-  padding: 18px;
-  width: 230px;
-  cursor: pointer;
-  left: 15%;
-  margin: 17px 10px 10px 12.5px;
-  border: #0c3e1a dashed 0.5px;
-}
+/* Popups */
 
 .main-container .popUp {
   position: absolute;
   display: none;
-  width: 50%;
-  height: 50%;
+  width: 70%;
+  height: auto;
+  margin: auto;
   background-color: #65d189;
   border-radius: 20px;
   border: #388624 dashed 1px;
   padding: 19px;
   z-index: 3;
-  left: 23.5%;
-  top: 23.5%;
+  left: 13.7%;
+  top: 13.7%;
   box-shadow: 1px 1px 5px #53a055;
 }
 
@@ -507,6 +532,10 @@ cursor: pointer;
   text-align: center;
 }
 
+.div1 {
+  text-align: center;
+}
+
 .div1 button {
   position: relative;
   color: #136129;
@@ -517,11 +546,14 @@ cursor: pointer;
   border: none;
   border-radius: 5px;
   padding: 18px;
-  width: 250px;
+  width: 50%;
   cursor: pointer;
   margin: 10px 0px 20px 0px;
-  left: 33.82%;
   box-shadow: 1px 1px 5px #89c88b;
+}
+
+.div2 {
+  text-align: center;
 }
 
 .div2 button {
@@ -533,9 +565,9 @@ cursor: pointer;
   background-color: #9bf0b8;
   border: none;
   padding: 18px;
-  width: 230px;
+  width: 32%;
   cursor: pointer;
-  margin: 10px 10px 10px 12.5px;
+  margin: auto;
   border: #0c3e1a dashed 0.5px;
 }
 
@@ -547,7 +579,7 @@ cursor: pointer;
   position: absolute;
   display: none;
   width: 50%;
-  height: 40%;
+  height: auto;
   background-color: #65d189;
   border-radius: 20px;
   border: #388624 dashed 1px;
@@ -568,8 +600,12 @@ cursor: pointer;
   margin-top: 20px;
 }
 
-#popUp2 button {
+.buttonPop2 {
   position: relative;
+  text-align: center;
+}
+
+.buttonPop2 button {
   color: #136129;
   font-weight: bold;
   font-size: 15px;
@@ -577,10 +613,9 @@ cursor: pointer;
   background-color: #9bf0b8;
   border: none;
   padding: 18px;
-  width: 230px;
+  width: 32%;
   cursor: pointer;
-  left: 15%;
-  margin: 17px 10px 10px 12.5px;
+  margin: 5px;
   border: #0c3e1a dashed 0.5px;
 }
 
@@ -592,15 +627,16 @@ cursor: pointer;
   position: absolute;
   display: none;
   width: 50%;
-  height: 50%;
+  height: auto;
   background-color: #65d189;
   border-radius: 20px;
   border: #388624 dashed 1px;
   padding: 19px;
   z-index: 3;
   left: 23.5%;
-  top: 23.5%;
+  top: 12%;
   box-shadow: 1px 1px 5px #53a055;
+  text-align: center;
 }
 
 #popUp3 p {
@@ -622,13 +658,249 @@ cursor: pointer;
   background-color: #9bf0b8;
   border: none;
   padding: 18px;
-  width: 230px;
+  width: 50%;
   cursor: pointer;
-  left: 32%;
-  margin: 17px 10px 10px 12.5px;
+  margin: auto;
   border: #0c3e1a dashed 0.5px;
 }
 
 #popUp3 button:hover {
   background-color: #80fc95;
 }
+
+/* End of Popups */
+
+/* Responsive Top Nav */
+
+@media only screen and (max-width: 1130px) {
+  .checkbtn {
+    display: block;
+  }
+
+  .menu {
+    display: block !important;
+    position: absolute;
+    width: 100%;
+    height: 100vw;
+    left: -200vw;
+    transition-duration: 0.2s;
+  }
+
+  .topnav .option {
+    display: none;
+  }
+
+  .search-container {
+    position: fixed;
+    width: 100vw;
+    top: 70px;
+    left: -300vw;
+    right: 49em;
+    transition-duration: 0.2s;
+  }
+
+  .search-input {
+    width: 100vw !important;
+    border-radius: 0px !important;
+  }
+
+  .search-input input {
+    width: 80vw;
+    border-radius: 0px !important;
+  }
+  .search-input .autocom-box {
+    width: 100%;
+    box-shadow: #136129 1px 0px 3px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .name a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .topnav .option {
+    left: 5vw;
+  }
+  .video .chemVid {
+    margin-top: 3.5em;
+    margin-left: 1.8em;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .topnav .option {
+    left: 2vw;
+  }
+  .video .chemVid {
+    margin-top: 6em;
+    margin-left: 1.5em;
+  }
+  
+}
+
+/* End of Responsive Top Nav */
+
+@media only screen and (min-width: 1130px) {
+  .main-container {
+    height: 91% !important;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .quiz-container {
+    width: 101% !important;
+    padding: 0 !important;
+  }
+  .quizTitle h1 {
+    margin: auto  !important;
+    padding: 30px;
+  }
+  .questions {
+    width: 90%;
+    margin: auto !important;
+  }
+  .TheSpace {
+    height: 2em !important;
+  }
+  #popUp2 {
+    top: 20%  !important;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .question1, .question2, .question3, .question4, .question5, .question6 {
+    width: 100%;
+  }
+  .answer label {
+    margin: 10px 0 5px 0 !important;
+  }
+  .sect1, .sect2 {
+    float: none !important;
+    width: 96% !important;
+    margin: auto !important;
+  }
+  .spacer {
+    height: 2px !important;
+  }
+  .questions {
+    /* width: auto !important; */
+    margin: auto !important;
+  }
+  .TheSpace {
+    height: 2em !important;
+  }
+  #popUp2 p {
+    font-size: 40px !important;
+  }
+  #popUp3 p {
+    font-size: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .quizTitle h1 {
+    font-size: 1.5em;
+  }
+  .TheSpace {
+    height: 2em !important;
+  }
+  .popUp p {
+    font-size: 35px !important;
+  }
+  #popUp2 {
+    top: 12%  !important;
+  }
+  #popUp3 p {
+    font-size: 35px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .quizTitle {
+    float: none !important;
+    width: 100% !important;
+    margin: 6px !important;
+    height: 5% !important;
+    text-align: center;
+  }
+
+  .quizTitle h1 {
+    padding: 0 !important;
+  }
+
+  .cancel {
+    float:  none !important;
+    width: 100% !important;
+    margin: 2em 0 0 0!important;
+    text-align: center;
+  }
+
+  .cancel button {
+    float: none !important;
+    margin: auto !important;
+    width: 50%;
+  }
+
+  .div2 button {
+    padding: 5px !important;
+  }
+  .div1 button {
+    padding: 5px !important;
+  }
+  .popUp p {
+    font-size: 35px !important;
+  }
+
+  #popUp2 p {
+    font-size: 30px !important;
+  }
+  #popUp2 {
+    top: 15%  !important;
+  }
+  #popUp3 p {
+    font-size: 25px !important;
+  }
+  #popUp3 {
+    left: 19%  !important;
+  }
+  .answer label {
+    height: auto !important;
+  }
+}
+
+@media only screen and (max-width: 285px) {
+  #btn {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+  #btn2 {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+  .quizTitle h1 {
+    font-size: 1.3em !important;
+  }
+  .popUp {
+    /* height: 64% !important; */
+    left: 8% !important;
+  }
+  #popUp2 button {
+    padding: 0 !important;
+  }
+  #popUp2 {
+    left: 19%  !important;
+  }
+
+  #popUp3 p {
+    font-size: 20px !important;
+  }
+
+  #popUp3 button {
+    padding: 2px !important;
+  }
+
+}
+

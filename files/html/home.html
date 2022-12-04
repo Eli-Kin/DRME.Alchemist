@@ -22,6 +22,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="home">
@@ -33,7 +34,17 @@
         <div class="name">
           <a href="../html/getstarted.html">DRME.Alchemist</a>
         </div>
-        
+
+
+        <!-- Search Engine -->
+        <div id="srch" class="search-container">
+          <div class="search-input">
+            <input id="search" type="text" placeholder="Search" onchange="openPage()">            
+            <div class="icon"><i id="search" class="material-icons" onclick="openPage()">search</i></div>
+            <div class="autocom-box">
+            </div>
+          </div>
+        </div>  
 
         <div class="option">
           <a href="../html/home.html" class="opt1">Homepage</a>
@@ -41,25 +52,44 @@
           <a href="../html/quiz.html" class="opt3">Quizzes</a>
           <a href="../html/aboutUs.html" class="opt4">About Us</a>
         </div>
+        
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <input onclick="changedOnClick()" type="checkbox" id="check">
 
-        <div class="search-container">
-          <div class="search-input">
-            <a href="" target="_blank" hidden></a>
-            <input id="search" type="text" placeholder="Search" onchange="openPage()">
-            <div class="autocom-box">
-            </div>
-            <div class="icon"><i id="search" class="material-icons" onclick="openPage()">search</i></div>
-          </div>
-        </div>
       </div>
 
       <!-- Main -->
-      <div class="main-container">
-        <div class="video">
+      <div id="main" class="main-container">
+
+        <!-- Menu -->
+
+        <div id="openMenu" class="menu">
+          <div class="menuOption">
+            <hr>
+            <a class="opt1">&#160;</a>
+            <hr>
+            <a href="../html/lessons.html" class="opt2">Lessons</a>
+            <hr>
+            <a href="../html/quiz.html" class="opt3">Quizzes</a>
+            <hr>
+            <a href="../html/aboutUs.html" class="opt4">About Us</a>
+            <hr>
+          </div>
+        </div>
+
+        <!-- Video -->
+
+        <div id="myVideo" class="video">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLexagO6P8kJec6frUBPaFyG1tDLcsA5S5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="chemVid"></iframe>
         </div>
 
+        <!-- Sidebar -->
+
         <div class="sidebar">
+
+          <!-- Trivia Facts -->
 
           <div class="triviaFacts">
             <div class="facts">
@@ -69,6 +99,8 @@
               <p id="theFacts"></p>
             </div>
           </div>
+
+          <!-- Trivia Quiz -->
 
           <div class="Trivia">
             <div class="triviaHeading">
@@ -122,7 +154,7 @@
     </div>
 
     <script src="../js/search.js"></script>
-
+    <script src="../js/nav.js"></script>
     <script src="../js/home.js"></script>
 
   </body>

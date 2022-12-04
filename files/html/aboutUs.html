@@ -1,112 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link rel="stylesheet" href="../css/aboutUs.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/aboutUs.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="topnav">
+      <a href="../html/getstarted.html" class="logo"
+        ><img src="../img/DRME.Alchemist Logo No Text.png" alt="logo"
+      /></a>
+      <div class="name">
+        <a href="../html/getstarted.html">DRME.Alchemist</a>
+      </div>
 
-</head>
-<body>
-    <div class = "aboutUs">
-
-        <!-- Navbar -->
-        <div class="topnav">
-            <a href="../html/getstarted.html" class="logo"
-              ><img src="../img/DRME.Alchemist Logo No Text.png" alt="logo"
-            /></a>
-            <div class="name">
-              <a href="../html/getstarted.html">DRME.Alchemist</a>
-            </div>
-            
-    
-            <div class="option">
-              <a href="../html/home.html" class="opt1">Homepage</a>
-              <a href="../html/lessons.html" class="opt2">Lessons</a>
-              <a href="../html/quiz.html" class="opt3">Quizzes</a>
-              <a href="../html/aboutUs.html" class="opt4">About Us</a>
-            </div>
-    
-            <div class="search-container">
-              <div class="search-input">
-                <a href="" target="_blank" hidden></a>
-                <input id="search" type="text" placeholder="Search" onchange="openPage()">
-                <div class="autocom-box">
-                </div>
-                <div class="icon"><i id="search" class="material-icons" onclick="openPage()">search</i></div>
-              </div>
-            </div>
+      <!-- Search Engine -->
+      <div id="srch" class="search-container">
+        <div class="search-input">
+          <input
+            id="search"
+            type="text"
+            placeholder="Search"
+            onchange="openPage()"
+          />
+          <div class="icon">
+            <i id="search" class="material-icons" onclick="openPage()"
+              >search</i
+            >
           </div>
-
-        <!-- Main -->
-        <div class="main-container">
-
-          <div class="developer">
-
-            <div class="dev-container">
-
-              <div class="dev-description">
-
-                <h2>Web Developers</h2>
-
-                <p>We, the Grade 12 IT in Mobile App and Web Development students of STI College Kalibo, are currently conducting our research entitled "The Effectiveness of DRME. Alchemist in Learning Chemistry Among the Students in Kalibo."</p>
-
-              </div>
-
-              <div class="dev-name">
-
-                <div class="dev">
-
-                  <h5>Drew Ramos</h5>
-                  <p id="initial">D</p>
-                  <p style="text-align: justify;">I am the webpage <b>Quality Tester</b>, and I test and evaluate programs to identify and resolve user experience issues. <br>I am also a <b>Content Producer</b>, which means that I create and find web content through the use of images, videos, and articles.</p>
-
-                </div>
-
-                <div class="dev">
-
-                  <h5>Raphy Lloyd Mangaya</h5>
-                  <p id="initial">R</p>
-                  <p>Praesent accumsan libero ex, sit amet euismod justo aliquet id. Mauris a iaculis leo.</p>
-
-                </div>
-
-                <div class="dev">
-
-                  <h5>Mquie Amorio</h5>
-                  <p id="initial">M</p>
-                  <p>Praesent accumsan libero ex, sit amet euismod justo aliquet id. Mauris a iaculis leo.</p>
-
-                </div>
-
-                <div class="dev">
-
-                  <h5>Elijah King de Dios</h5>
-                  <p id="initial">E</p>
-                  <p style="text-align: justify;">I am the <b>Front-End Developer</b>, I write code that allows users to access and interact with the website and I make the layout look nice. <br>
-                    I am also a <b>Web Designer</b>, I create the prototype of the website and create a visual style for the website functionality.</p>
-
-                  <!-- <hr class="line">
-                  <h5 id="cntct">Contact Information</h5>
-                  <p style="text-align: justify;">&#x2022; elikingofficial@gmail.com</p>
-                  <p style="text-align: justify;">&#x2022; +639273304965</p>
-                  <hr class="line"> -->
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
+          <div class="autocom-box"></div>
         </div>
+      </div>
 
+      <div class="option">
+        <a href="../html/home.html" class="opt1">Homepage</a>
+        <a href="../html/lessons.html" class="opt2">Lessons</a>
+        <a href="../html/quiz.html" class="opt3">Quizzes</a>
+        <a href="../html/aboutUs.html" class="opt4">About Us</a>
+      </div>
 
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <input onclick="changedOnClick()" type="checkbox" id="check" />
     </div>
+
+    <!-- Main -->
+    <div id="main" class="main-container">
+      <!-- Menu -->
+      <div id="openMenu" class="menu">
+        <div class="menuOption">
+          <hr />
+          <a class="opt1">&#160;</a>
+          <hr />
+          <a href="../html/home.html" class="opt2">Homepage</a>
+          <hr />
+          <a href="../html/lessons.html" class="opt3">Lessons</a>
+          <hr />
+          <a href="../html/quiz.html" class="opt4">Quizzes</a>
+          <hr />
+        </div>
+      </div>
+
+      <div class="developer">
+        <div class="dev-container">
+          <div class="dev-description">
+            <h2>Web Developers</h2>
+
+            <p>
+              We, the Grade 12 IT in Mobile App and Web Development students of
+              STI College Kalibo, are currently conducting our research entitled
+              "The Effectiveness of DRME. Alchemist in Learning Chemistry Among
+              the Students in Kalibo."
+            </p>
+          </div>
+
+          <div class="dev-name">
+            <div class="sect1">
+              <div id="drew" class="dev">
+                <h5>Drew Ramos</h5>
+                <p id="initial">D</p>
+                <p style="text-align: justify">
+                  I am the webpage <b>Quality Tester</b>, and I test and
+                  evaluate programs to identify and resolve user experience
+                  issues. <br />I am also a <b>Content Producer</b>, which means
+                  that I create and find web content through the use of images,
+                  videos, and articles.
+                </p>
+              </div>
+
+              <div id="mangaya" class="dev">
+                <h5>Raphy Lloyd Mangaya</h5>
+                <p id="initial">R</p>
+                <p style="text-align: justify">
+                  I am a <b>Content Producer</b> for the website we are
+                  developing. I am responsible for gathering ideas and improving
+                  them before the developer input it on the system.
+                </p>
+              </div>
+            </div>
+
+            <div class="sect2">
+              <div id="amorio" class="dev">
+                <h5>Mquie Amorio</h5>
+                <p id="initial">M</p>
+                <p style="text-align: justify">
+                  I am the <b>Quality Tester</b> in charge of identifying and reporting
+                  problems on the website.<br> I also produce content for quizzes
+                  and trivia, therefore I may also be considered a <b>Content
+                    Producer</b>.
+                </p>
+              </div>
+
+              <div id="deDios" class="dev">
+                <h5>Elijah King de Dios</h5>
+                <p id="initial">E</p>
+                <p style="text-align: justify">
+                  I am the <b>Front-End Developer</b>, I write code that allows
+                  users to access and interact with the website and I make the
+                  layout look nice. <br />
+                  I am also a <b>Web Designer</b>, I create the prototype of the
+                  website and create a visual style for the website
+                  functionality.
+                </p>
+
+                <!-- <hr class="line">
+                    <h5 id="cntct">Contact Information</h5>
+                    <p style="text-align: justify;">&#x2022; elikingofficial@gmail.com</p>
+                    <p style="text-align: justify;">&#x2022; +639273304965</p>
+                    <hr class="line"> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/nav.js"></script>
     <script src="../js/search.js"></script>
-</body>
+  </body>
 </html>

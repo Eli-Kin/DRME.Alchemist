@@ -11,6 +11,13 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </script>
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
     <div class="lesson6">
@@ -24,26 +31,56 @@
             </div>
             
     
-            <div class="option">
-              <a href="../../html/home.html" class="opt1">Homepage</a>
-              <a href="../../html/lessons.html" class="opt2">Lessons</a>
-              <a href="../../html/quiz.html" class="opt3">Quizzes</a>
-              <a href="../../html/aboutUs.html" class="opt4">About Us</a>
+            <!-- Search Engine -->
+        <div id="srch" class="search-container">
+          <div class="search-input">
+            <input
+              id="search"
+              type="text"
+              placeholder="Search"
+              onchange="openPage()"
+            />
+            <div class="icon">
+              <i id="search" class="material-icons" onclick="openPage()"
+                >search</i
+              >
             </div>
-    
-            <div class="search-container">
-              <div class="search-input">
-                <a href="" target="_blank" hidden></a>
-                <input id="search" type="text" placeholder="Search" onchange="openPage()">
-                <div class="autocom-box">
-                </div>
-                <div class="icon"><i id="search" class="material-icons" onclick="openPage()">search</i></div>
-              </div>
-            </div>
+            <div class="autocom-box"></div>
+          </div>
+        </div>
+
+        <div class="option">
+          <a href="../../html/home.html" class="opt1">Homepage</a>
+          <a href="../../html/lessons.html" class="opt2">Lessons</a>
+          <a href="../../html/quiz.html" class="opt3">Quizzes</a>
+          <a href="../../html/aboutUs.html" class="opt4">About Us</a>
+        </div>
+
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <input onclick="changedOnClick()" type="checkbox" id="check" />
             </div>
 
           <!-- Main -->
           <div class="main-container">
+
+            <!-- Menu -->
+        <div id="openMenu" class="menu">
+          <div class="menuOption">
+            <hr />
+            <a class="opt1">&#160;</a>
+            <hr />
+            <a href="../../html/home.html" class="opt2">Homepage</a>
+            <hr />
+            <a href="../../html/lessons.html" class="opt3">Lessons</a>
+            <hr />
+            <a href="../../html/quiz.html" class="opt4">Quizzes</a>
+            <hr />
+            <a href="../../html/aboutUs.html" class="opt5">About Us</a>
+            <hr />
+          </div>
+        </div>
 
             <div class="lesson-container">
 
@@ -169,7 +206,7 @@
                           <p>Dipole moments of molecules are usually reported in debyes (D), a unit that equals 3.34 X 10-30 coulomb-meters (C—m). For molecules, we usually measure charge in units of the electronic charge e, 1.60 X 10-19 C, and distance in units of Angstroms, Å. Suppose that two charges, 1+ and 1- (in units of e), are separated by distance of 1.00 Å. The dipole moment produced is:
                           </p>
 
-                          <p>\[\mu  = Qr = (1.60 \times {10^{ - 19}}C)(1.00{\rm Å})\left( {\frac{{{{10}^{ - 10}}m}}{{1{\rm Å}}}} \right)\left( {\frac{{1D}}{{3.34 \times {{10}^{ - 30}}C - m}}} \right) = 4.79D\]</p>
+                          <p style="overflow-x: scroll;">\[\mu  = Qr = (1.60 \times {10^{ - 19}}C)(1.00{\rm Å})\left( {\frac{{{{10}^{ - 10}}m}}{{1{\rm Å}}}} \right)\left( {\frac{{1D}}{{3.34 \times {{10}^{ - 30}}C - m}}} \right) = 4.79D\]</p>
 
                           <br>
 
@@ -252,6 +289,8 @@
           </div>
 
     </div>
+
+    <script src="../../js/nav.js"></script>
     <script src="../../js/search2.js"></script>
 </body>
 </html>

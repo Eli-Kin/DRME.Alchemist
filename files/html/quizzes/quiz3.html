@@ -14,6 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="quiz1">
@@ -26,6 +33,24 @@
           <a href="../../html/getstarted.html">DRME.Alchemist</a>
         </div>
 
+        <!-- Search Engine -->
+        <div id="srch" class="search-container">
+          <div class="search-input">
+            <input
+              id="search"
+              type="text"
+              placeholder="Search"
+              onchange="openPage()"
+            />
+            <div class="icon">
+              <i id="search" class="material-icons" onclick="openPage()"
+                >search</i
+              >
+            </div>
+            <div class="autocom-box"></div>
+          </div>
+        </div>
+
         <div class="option">
           <a href="../../html/home.html" class="opt1">Homepage</a>
           <a href="../../html/lessons.html" class="opt2">Lessons</a>
@@ -33,19 +58,30 @@
           <a href="../../html/aboutUs.html" class="opt4">About Us</a>
         </div>
 
-        <div class="search-container">
-          <div class="search-input">
-            <a href="" target="_blank" hidden></a>
-            <input id="search" type="text" placeholder="Search" onchange="openPage()">
-            <div class="autocom-box">
-            </div>
-            <div class="icon"><i id="search" class="material-icons" onclick="openPage()">search</i></div>
-          </div>
-        </div>
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <input onclick="changedOnClick()" type="checkbox" id="check" />
       </div>
 
       <!-- Main -->
       <div class="main-container">
+        <!-- Menu -->
+        <div id="openMenu" class="menu">
+          <div class="menuOption">
+            <hr />
+            <a class="opt1">&#160;</a>
+            <hr />
+            <a href="../../html/home.html" class="opt2">Homepage</a>
+            <hr />
+            <a href="../../html/lessons.html" class="opt3">Lessons</a>
+            <hr />
+            <a href="../../html/quiz.html" class="opt4">Quizzes</a>
+            <hr />
+            <a href="../../html/aboutUs.html" class="opt5">About Us</a>
+            <hr />
+          </div>
+        </div>
         <div class="quiz-container">
           <div class="quizTitle">
             <h1 id="title">Molecules and Molecular Compounds</h1>
@@ -707,14 +743,13 @@
               ></div>
               <button onclick="quizFunction()" id="btn">Submit</button>
               <button
-                onclick="location.href = '../quizzes/quiz3.html'"
+                onclick="location.href = '../quizzes/quiz1.html'"
                 id="btn2"
               >
                 Try Again
               </button>
-              <div
-                style="margin: 0; width: auto; height: 20px"
-                class="spacer"
+              <div class="TheSpace"
+                style="margin: 0; width: auto; height: 3em"
               ></div>
             </div>
             
@@ -761,6 +796,7 @@
 
       
     </div>
+    <script src="../../js/nav.js"></script>
     <script src="../../js/search2.js"></script>
     <script src="../../js/quiz.js"></script>
   </body>

@@ -1,160 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lessons</title>
-    <link rel="stylesheet" href="../css/lessons.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/lessons.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
 
-</head>
-<body>
-    <div class = "mainLessons">
 
-        <!-- Navbar -->
-        <div class="topnav">
-            <a href="../html/getstarted.html" class="logo"
-              ><img src="../img/DRME.Alchemist Logo No Text.png" alt="logo"
-            /></a>
-            <div class="name">
-              <a href="../html/getstarted.html">DRME.Alchemist</a>
+      <!-- Navbar -->
+      <div class="topnav">
+        <a href="../html/getstarted.html" class="logo"
+          ><img src="../img/DRME.Alchemist Logo No Text.png" alt="logo"
+        /></a>
+        <div class="name">
+          <a href="../html/getstarted.html">DRME.Alchemist</a>
+        </div>
+
+        <!-- Search Engine -->
+        <div id="srch" class="search-container">
+          <div class="search-input">
+            <input
+              id="search"
+              type="text"
+              placeholder="Search"
+              onchange="openPage()"
+            />
+            <div class="icon">
+              <i id="search" class="material-icons" onclick="openPage()"
+                >search</i
+              >
             </div>
-            
-    
-            <div class="option">
-              <a href="../html/home.html" class="opt1">Homepage</a>
-              <a href="../html/lessons.html" class="opt2">Lessons</a>
-              <a href="../html/quiz.html" class="opt3">Quizzes</a>
-              <a href="../html/aboutUs.html" class="opt4">About Us</a>
-            </div>
-    
-            <div class="search-container">
-              <div class="search-input">
-                <a href="" target="_blank" hidden></a>
-                <input id="search" type="text" placeholder="Search" onchange="openPage()">
-                <div class="autocom-box">
-                </div>
-                <div class="icon"><i id="search" class="material-icons" onclick="openPage()">search</i></div>
-              </div>
-            </div>
+            <div class="autocom-box"></div>
           </div>
+        </div>
 
-        <!-- Main -->
-        <div class="main-container">
-          
-            <div class="heading">
+        <div class="option">
+          <a href="../html/home.html" class="opt1">Homepage</a>
+          <a href="../html/lessons.html" class="opt2">Lessons</a>
+          <a href="../html/quiz.html" class="opt3">Quizzes</a>
+          <a href="../html/aboutUs.html" class="opt4">About Us</a>
+        </div>
 
-              <h2>Lessons</h2>
-              <p>Read, Analyze, Review and Learn more about Chemistry. You are free to choose any lesson you might like. Happy Reading!</p>
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <input onclick="changedOnClick()" type="checkbox" id="check" />
 
+      </div>
+
+      <!-- Main -->
+      <div id="main" class="main-container">
+        
+        <!-- Menu -->
+        <div id="openMenu" class="menu">
+          <div class="menuOption">
+            <hr />
+            <a class="opt1">&#160;</a>
+            <hr />
+            <a href="../html/home.html" class="opt2">Homepage</a>
+            <hr />
+            <a href="../html/quiz.html" class="opt3">Quizzes</a>
+            <hr />
+            <a href="../html/aboutUs.html" class="opt4">About Us</a>
+            <hr />
+          </div>
+        </div>
+
+        <div class="heading">
+          <h2>Lessons</h2>
+          <p>
+            Read, Analyze, Review and Learn more about Chemistry. You are free
+            to choose any lesson you might like. Happy Reading!
+          </p>
+        </div>
+
+        <div class="lessons">
+
+            <div class="lessons-container1">
+              <div
+                onclick="location.href='../html/lessons/lesson1.html';"
+                style="cursor: pointer"
+                class="lesson"
+              >
+                <div class="lessonTitle">
+                  <h2>Classification of Matter</h2>
+                  <p>
+                    Let's begin our study of chemistry by examining some
+                    fundamental ways in which matter is classified and
+                    described...
+                  </p>
+                </div>
+
+                <img class="lessonImg" src="../img/clsmatter.png" />
+              </div>
             </div>
 
-            <div class="lessons">
-
-              <div class="section1">
-
-              <div class="lessons-container1">
-
-                <div onclick="location.href='../html/lessons/lesson1.html';" style="cursor: pointer;" class="lesson">
-                  <div class="lessonTitle">
-                    <h2>Classification of Matter</h2>
-                    <p>
-                      Let's begin our study of chemistry by examining some fundamental ways in which matter is classified and described...
-                    </p>
-                  </div>
-  
-                  <img class="lessonImg" src="../img/clsmatter.png" />
+            <div class="lessons-container2">
+              <div
+                onclick="location.href='../html/lessons/lesson2.html';"
+                style="cursor: pointer"
+                class="lesson"
+              >
+                <div class="lessonTitle">
+                  <h2>Modern View of Atomic Structure</h2>
+                  <p>
+                    Since the time of Rutherford, physicists have learned much
+                    about the detailed composition of atomic nuclei...
+                  </p>
                 </div>
 
+                <img class="lessonImg" src="../img/atom.png" />
               </div>
-              <div class="lessons-container2">
-
-                <div onclick="location.href='../html/lessons/lesson2.html';" style="cursor: pointer;" class="lesson">
-                  <div class="lessonTitle">
-                    <h2>Modern View of Atomic Structure</h2>
-                    <p>
-                      Since the time of Rutherford, physicists have learned much
-                  about the detailed composition of atomic nuclei...
-                    </p>
-                  </div>
-  
-                  <img class="lessonImg" src="../img/atom.png" />
-                </div>
-
-              </div>
-              <div class="lessons-container3">
-
-                <div onclick="location.href='../html/lessons/lesson3.html';" style="cursor: pointer;" class="lesson">
-                  <div class="lessonTitle">
-                    <h2>Molecules and Molecular Compounds</h2>
-                    <p>
-                      We have seen that the atom is the smallest representative sample of an element. However...
-                    </p>
-                  </div>
-  
-                  <img class="lessonImg" src="../img/molecular.png" />
-                </div>
-
-              </div>
-
-            </div>
-              
-              <div class="section2">
-
-              <div class="lessons-container4">
-
-                <div onclick="location.href='../html/lessons/lesson4.html';" style="cursor: pointer;" class="lesson">
-                  <div class="lessonTitle">
-                    <h2>The Periodic Table</h2>
-                    <p>
-                      Dalton's atomic theory set the stage for a vigorous growth in
-                  chemical experimentation during the early 1800s...
-                    </p>
-                  </div>
-  
-                  <img class="lessonImg" src="../img/elements.png" />
-                </div>
-
-              </div>
-              <div class="lessons-container5">
-
-                <div onclick="location.href='../html/lessons/lesson5.html';" style="cursor: pointer;" class="lesson">
-                  <div class="lessonTitle">
-                    <h2>Properties of Matter</h2>
-                    <p>
-                      Every substance has a unique set of properties, characteristics that allow us to recognize it and to distinguish it from other...
-                    </p>
-                  </div>
-  
-                  <img class="lessonImg" src="../img/matterproperties.png" />
-                </div>
-
-              </div>
-              <div class="lessons-container6">
-
-                <div onclick="location.href='../html/lessons/lesson6.html';" style="cursor: pointer;" class="lesson">
-                  <div class="lessonTitle">
-                    <h2>Bond Polarity and Electronegativity</h2>
-                    <p>
-                      The electron pairs shared between two different atoms are usually not shared equally. We can visualize two extreme cases in...
-                    </p>
-                  </div>
-  
-                  <img class="lessonImg" src="../img/bond.png" />
-                </div>
-
-              </div>
-
             </div>
 
+            <div class="lessons-container3">
+              <div
+                onclick="location.href='../html/lessons/lesson3.html';"
+                style="cursor: pointer"
+                class="lesson"
+              >
+                <div class="lessonTitle">
+                  <h2>Molecules and Molecular Compounds</h2>
+                  <p>
+                    We have seen that the atom is the smallest representative
+                    sample of an element. However...
+                  </p>
+                </div>
+
+                <img class="lessonImg" src="../img/molecular.png" />
+              </div>
             </div>
 
+            <div class="lessons-container4">
+              <div
+                onclick="location.href='../html/lessons/lesson4.html';"
+                style="cursor: pointer"
+                class="lesson"
+              >
+                <div class="lessonTitle">
+                  <h2>The Periodic Table</h2>
+                  <p>
+                    Dalton's atomic theory set the stage for a vigorous growth
+                    in chemical experimentation during the early 1800s...
+                  </p>
+                </div>
+
+                <img class="lessonImg" src="../img/elements.png" />
+              </div>
+            </div>
+
+            <div class="lessons-container5">
+              <div
+                onclick="location.href='../html/lessons/lesson5.html';"
+                style="cursor: pointer"
+                class="lesson"
+              >
+                <div class="lessonTitle">
+                  <h2>Properties of Matter</h2>
+                  <p>
+                    Every substance has a unique set of properties,
+                    characteristics that allow us to recognize it and to
+                    distinguish it from other...
+                  </p>
+                </div>
+
+                <img class="lessonImg" src="../img/matterproperties.png" />
+              </div>
+            </div>
+
+            <div class="lessons-container6">
+              <div
+                onclick="location.href='../html/lessons/lesson6.html';"
+                style="cursor: pointer"
+                class="lesson"
+              >
+                <div class="lessonTitle">
+                  <h2>Bond Polarity and Electronegativity</h2>
+                  <p>
+                    The electron pairs shared between two different atoms are
+                    usually not shared equally. We can visualize two extreme
+                    cases in...
+                  </p>
+                </div>
+
+                <img class="lessonImg" src="../img/bond.png" />
+              </div>
             </div>
 
         </div>
-
-        <script src="../js/search.js"></script>
-</body>
+      </div>
+    <script src="../js/nav.js"></script>
+    <script src="../js/search.js"></script>
+  </body>
 </html>

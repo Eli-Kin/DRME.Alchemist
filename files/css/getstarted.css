@@ -1,24 +1,25 @@
 body {
-    margin: 0;
-    background-color: #B7EBBC;
+  margin: 0;
+  background-color: #136129;
+  overflow: hidden;
 }
 
 /* Top Nav */
 
 .topnav {
-    position: relative;
-    background-color: #ffffff;
-    overflow: visible;
-    box-shadow: 0px 0px 1px ;
-    z-index: 1;
-    height: 9vh;
+  position: relative;
+  background-color: #ffffff;
+  overflow: visible;
+  box-shadow: 0px 0px 1px;
+  z-index: 1;
+  height: 4.5em;
 }
 
 .topnav img {
-    width: 70px;
-    height: auto;
-    margin-left: 10px;
-    float: left;
+  width: 70px;
+  height: auto;
+  margin-left: 10px;
+  float: left;
 }
 
 .topnav .name {
@@ -28,33 +29,47 @@ body {
 }
 
 .name a {
-    text-decoration: none;
-    float: left;
-    margin: 0px;
-    padding-top: 15px;
-    font-family: 'Nunito';
-    font-size: 30px;
-    color: #388624;
+  text-decoration: none;
+  float: left;
+  margin: 0px;
+  padding-top: 15px;
+  font-family: "Nunito";
+  font-size: 30px;
+  color: #388624;
 }
 
-.search-container{
-  max-width: 450px;
+.checkbtn{
+  font-size: 30px;
+  color: #136129;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+.search-container {
+  float: right;
+  max-width: 20em;
   margin: 0px auto;
 }
 
-.search-container .search-input{
+.search-container .search-input {
   background-color: #dbeafe;
-  width: 380px;
+  width: 22em;
   border-radius: 5px;
   position: relative;
-  top: 11px;
-  left: 39vw;
-
+  top: 0.8em;
+  /* left: 35em; */
+  right: 3em;
 }
 
-.search-input input{
+.search-input input {
   height: 45px;
-  width: 300px;
+  width: 17.5em;
   outline: none;
   border: none;
   border-radius: 5px;
@@ -64,16 +79,16 @@ body {
   color: #136129;
 }
 
-.search-input.active input{
+.search-input.active input {
   border-radius: 5px 5px 0 0;
 }
 
-.search-input .autocom-box{
+.search-input .autocom-box {
   position: absolute;
   padding: 0;
   opacity: 0;
   pointer-events: none;
-  width: 23vw;
+  width: 21.5em;
   max-height: 280px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -86,13 +101,13 @@ body {
   background: transparent; /* make scrollbar transparent */
 }
 
-.search-input.active .autocom-box{
+.search-input.active .autocom-box {
   padding: 10px 8px;
   opacity: 1;
   pointer-events: auto;
 }
 
-.autocom-box li{
+.autocom-box li {
   list-style: none;
   padding: 8px 12px;
   display: none;
@@ -103,14 +118,14 @@ body {
   font-family: "Inter";
 }
 
-.search-input.active .autocom-box li{
+.search-input.active .autocom-box li {
   display: block;
 }
-.autocom-box li:hover{
+.autocom-box li:hover {
   background: #efefef;
 }
 
-.search-input .icon{
+.search-input .icon {
   position: absolute;
   right: 0px;
   top: 0px;
@@ -125,73 +140,176 @@ body {
 
 /* End of Top Nav */
 
-  .main-container {
-    position: absolute;
-    background-color: #B7EBBC;
-    width: 100%;
-    height: 90%;
-    overflow: hidden;
-  }
+.main-container {
+  position: absolute;
+  background-color: #b7ebbc;
+  width: 100%;
+  height: 91%;
+  overflow: auto;
+}
 
-  .logotxt {
-    width: 40%;
-    height: auto;
-    float: left;
-    overflow: hidden;
-  }
+.logotxt {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
 
-  .logotxt img {
-    width: auto;
-    height: 600px;
-    padding: 10px;
-    padding-top: 50px;
-  }
+.img-container {
+  width: 100%;
+  min-height: 100em;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 90em;
+}
 
+.img-container img {
+  max-width: 100%;
+  max-height: 100em;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.intro {
+  font-size: 1.5em;
+}
+
+.intro h2 {
+  padding-top: 20px;
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: "Inter";
+  color: #136129;
+  margin-right: 10px;
+  /* line-height: 1em; */
+}
+
+.intro p {
+  font-family: "Inter";
+  font-size: 1.5em;
+  color: #136129;
+  padding-right: 20px;
+}
+
+.intro button {
+  color: #136129;
+  font-weight: bold;
+  font-size: 17px;
+  font-family: "Inter";
+  background-color: #9bf0b8;
+  border: none;
+  border-radius: 9px;
+  padding: 18px;
+  width: 170px;
+  height: 60px;
+  border: #388624 dashed 1px;
+  cursor: pointer;
+  margin: 10px 0px 0px 0px;
+}
+
+.intro button:hover {
+  background-color: #39b15b;
+  color: white;
+  border: none;
+}
+
+@media (max-height: 600px) {
   .intro {
-    float: right;
-    width: 60%;
-    height: auto;
-    
+    font-size: 1em ;
   }
+}
 
+@media only screen and (max-width: 1276px) and (max-height: 659px) {
   .intro h2 {
-    padding-top: 70px;
-    font-size: 54px;
-    font-weight: bold;
-    font-family: 'Inter';
-    color: #136129;
-    line-height: 30px;
+    font-size: 4vw;
+    margin-top: 50px !important;
   }
-
   .intro p {
-    line-height: 45px;
-    font-family: 'Inter';
-    font-size: 40px;
-    color: #136129;
-    padding-right: 20px;
+    font-size: 3vw !important;
   }
+}
 
+@media only screen and (max-width: 1100px) {
+  .intro h2 {
+    margin-top: 50px !important;
+  }
+}
+
+
+@media only screen and (max-width: 912px) {
+  .logotxt {
+    display: block;
+    width: 100%;
+    margin: 0;
+    background-color: #136129;
+  }
+  .intro {
+    display: inline-block;
+    margin: 19px;
+    text-align: center;
+  }
+  h2 {
+    padding: 0px !important;
+  }
+  p {
+    padding-right: 0px !important;
+  }
   .intro button {
-    color: #136129;
-    font-weight: bold;
-    font-size: 17px;
-    font-family: 'Inter';
-    background-color: #9BF0B8;
-    border: none;
-    border-radius: 9px;
-    padding: 18px;
-    width: 170px;
-    height: 60px;
-    border: #388624 dashed 1px;
-    cursor: pointer;
-    margin: 10px 0px 0px 0px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .checkbtn {
+    display: block;
   }
 
-  .intro button:hover {
-    background-color: #39b15b;
-    color: white;
-    border: none;
-    
+  .search-container {
+    position: fixed;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    transition: all .5s;
   }
 
+  .search-input .autocom-box {
+    width: 21.5em;
+  }
+}
 
+@media only screen and (max-width: 280px) {
+  .checkbtn {
+    display: block;
+  }
+
+  .search-container {
+    max-width: 20em;
+  }
+  
+  .search-container .search-input {
+    width: 19em;
+  }
+  
+  .search-input input {
+    width: 10em;
+  }
+
+  .search-input .autocom-box {
+    width: 17.5em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .name a {
+    display: none;
+  }
+}

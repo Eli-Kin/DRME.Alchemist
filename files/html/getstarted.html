@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/getstarted.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@300&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 </head>
 <body>
@@ -22,17 +22,24 @@
         /></a>
         <div class="name">
           <a href="../html/getstarted.html">DRME.Alchemist</a>
-        </div>
+        </div> 
 
-                <div class="search-container">
+                <div id="srch" class="search-container">
                     <div class="search-input">
                       <a href="" target="_blank" hidden></a>
-                      <input id="search" type="text" placeholder="Search" onchange="openPage()">
+                      <input id="search" type="text" placeholder="Search" onchange="openPage()">            
+                      <div class="icon"><i id="search" class="material-icons" onclick="openPage()">search</i></div>
                       <div class="autocom-box">
                       </div>
-                      <div class="icon"><i id="search" class="material-icons" onclick="openPage()">search</i></div>
                     </div>
-                  </div>
+                  </div>  
+                  
+                  <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                  </label>
+                  <input onclick="changedOnClick()" type="checkbox" id="check">
+                  
+
         </div>
 
 
@@ -40,7 +47,9 @@
         <div class="main-container">
 
             <div class="logotxt">
-                <img src="../img/DRME.Alchemist Logo With Text.png" alt="logotxt">
+                <div class="img-container">
+                  <img src="../img/DRME.Alchemist Logo With Text.png" alt="logotxt">
+                </div>
             </div>
 
             <div class="intro">
@@ -55,6 +64,7 @@
 
 
     </div>
+    <script src="../js/nav.js"></script>
     <script src="../js/search.js"></script>
 </body>
 </html>

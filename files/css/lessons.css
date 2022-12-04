@@ -1,6 +1,8 @@
 body {
     margin: 0;
     background-color: #b7ebbc;
+    overflow: hidden;
+    height: 100%;
 }
 
 /* Top Nav */
@@ -9,9 +11,9 @@ body {
   position: relative;
   background-color: #ffffff;
   overflow: visible;
-  box-shadow: 0px 0px 1px ;
+  box-shadow: 0px 0px 1px;
   z-index: 1;
-  height: 9vh;
+  height: 4.5em;
 }
 
 .topnav img {
@@ -22,9 +24,9 @@ body {
 }
 
 .topnav .name {
-position: relative;
-float: left;
-margin-top: 0px;
+  position: relative;
+  float: left;
+  margin-top: 0px;
 }
 
 .name a {
@@ -32,16 +34,17 @@ margin-top: 0px;
   float: left;
   margin: 0px;
   padding-top: 15px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 30px;
   color: #388624;
 }
 
 .topnav .option {
-  position: absolute;
+  position: relative;
   margin-top: 24px;
-  left: 18vw;
-  right: 18vw;
+  float: left;
+  left: 13vw;
+  right: 10vw;
 }
 
 .option a {
@@ -56,98 +59,108 @@ margin-top: 0px;
   text-decoration: underline;
 }
 
-.option .opt1 {
-  margin-left: 260px;
-}
-
 .option .opt2 {
   text-decoration: underline;
 }
 
-.search-container{
-max-width: 450px;
-margin: 0px auto;
+.checkbtn {
+  font-size: 30px;
+  color: #136129;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 }
 
-.search-container .search-input{
-background-color: #dbeafe;
-width: 380px;
-border-radius: 5px;
-position: relative;
-top: 11px;
-left: 39vw;
-
+#check {
+  display: none;
 }
 
-.search-input input{
-height: 45px;
-width: 300px;
-outline: none;
-border: none;
-border-radius: 5px;
-padding: 0 60px 0 20px;
-font-size: 16px;
-background-color: #dbeafe;
-color: #136129;
+.search-container {
+  float: right;
+  max-width: 20em;
+  margin: 0px auto;
 }
 
-.search-input.active input{
-border-radius: 5px 5px 0 0;
+.search-container .search-input {
+  background-color: #dbeafe;
+  width: 22em;
+  border-radius: 5px;
+  position: relative;
+  top: 0.8em;
+  right: 3em;
 }
 
-.search-input .autocom-box{
-position: absolute;
-padding: 0;
-opacity: 0;
-pointer-events: none;
-width: 23vw;
-max-height: 280px;
-overflow-y: auto;
-overflow-x: hidden;
-background-color: #fff;
-border-radius: 0 0 5px 5px;
+.search-input input {
+  height: 45px;
+  width: 17.5em;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 16px;
+  background-color: #dbeafe;
+  color: #136129;
+}
+
+.search-input.active input {
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box {
+  position: absolute;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  width: 21.5em;
+  max-height: 280px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
 }
 
 .search-input .autocom-box::-webkit-scrollbar {
-width: 0px;
-background: transparent; /* make scrollbar transparent */
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 
-.search-input.active .autocom-box{
-padding: 10px 8px;
-opacity: 1;
-pointer-events: auto;
+.search-input.active .autocom-box {
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.autocom-box li{
-list-style: none;
-padding: 8px 12px;
-display: none;
-width: 100%;
-cursor: default;
-border-radius: 3px;
-color: #136129;
-font-family: "Inter";
+.autocom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+  color: #136129;
+  font-family: "Inter";
 }
 
-.search-input.active .autocom-box li{
-display: block;
+.search-input.active .autocom-box li {
+  display: block;
 }
-.autocom-box li:hover{
-background: #efefef;
+.autocom-box li:hover {
+  background: #efefef;
 }
 
-.search-input .icon{
-position: absolute;
-right: 0px;
-top: 0px;
-height: 55px;
-width: 55px;
-text-align: center;
-line-height: 55px;
-font-size: 20px;
-color: #136129;
-cursor: pointer;
+.search-input .icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #136129;
+  cursor: pointer;
 }
 
 /* End of Top Nav */
@@ -156,22 +169,53 @@ cursor: pointer;
     position: absolute;
     background-color: #B7EBBC;
     width: 100%;
-    height: 90%;
+    height: 100%;
     overflow: hidden;
+    z-index: -2;
   }
+
+  /* Menu */
+
+.main-container .menu {
+  position: absolute;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+
+.menuOption a {
+  display: block;
+  text-decoration: none;
+  color: #136129;
+  text-align: center;
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.menuOption hr {
+  margin: 0;
+  border-top: #136129 1px dashed;
+}
+
+/* End of Menu */
 
   .main-container .heading {
     width: auto;
     height: 13%;
+    margin-bottom: 0.6em;
   }
 
   .heading h2 {
-    margin-top: 12px;
+    /* margin-top: 12px; */
     text-align: center;
     font-family: 'Inter';
     font-weight: bolder;
     color: #136129;
     font-size: 30px;
+    margin: 0;
   }
 
   .heading p {
@@ -179,57 +223,48 @@ cursor: pointer;
     font-family: 'Inter';
     color: #136129;
     font-size: 17px;
-    line-height: 7px;
   }
 
   .main-container .lessons {
+    position: relative;
     width: auto;
     height: 87%;
-  }
-
-  .lessons .section1 {
-    width: auto;
-    height: 50%;
-  }
-
-  .lessons .section2 {
-    width: auto;
-    height: 50%;
+    z-index: -1;
   }
 
   .lessons .lessons-container1 {
     width: 30%;
-    margin: 0px 25px 0px 24px;
+    margin: 10px 25px 10px 24px;
     height: auto;
     float: left;
   }
   .lessons .lessons-container2 {
     width: 30%;
-    margin: 0px 25px 0px 24px;
+    margin: 10px 25px 10px 24px;
     height: auto;
     float: left;
   }
   .lessons .lessons-container3 {
     width: 30%;
-    margin: 0px 25px 0px 24px;
+    margin: 10px 25px 10px 24px;
     height: auto;
     float: left;
   }
   .lessons .lessons-container4 {
     width: 30%;
-    margin: 0px 25px 0px 24px;
+    margin: 10px 25px 10px 24px;
     height: auto;
     float: left;
   }
   .lessons .lessons-container5 {
     width: 30%;
-    margin: 0px 25px 0px 24px;
+    margin: 10px 25px 10px 24px;
     height: auto;
     float: left;
   }
   .lessons .lessons-container6 {
     width: 30%;
-    margin: 0px 25px 0px 24px;
+    margin: 10px 25px 10px 24px;
     height: auto;
     float: left;
   }
@@ -245,7 +280,7 @@ cursor: pointer;
 
   .lessonImg {
     display: block;
-    width: 460px;
+    width: 100%;
     height: 220px;
     margin-left: auto;
     margin-right: auto;
@@ -275,7 +310,6 @@ cursor: pointer;
   .lessonTitle h2 {
     font-size: 15px;
     font-family: 'Nunito';
-    line-height: 8px;
   }
 
   .lessonTitle p {
@@ -283,4 +317,297 @@ cursor: pointer;
     font-family: 'Inter';
   }
 
- 
+  /* Responsive Top Nav */
+
+@media only screen and (max-width: 1130px) {
+  .main-container {
+    overflow-y: auto !important;
+    overflow-x: hidden;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  .menu {
+    display: block !important;
+    position: absolute;
+    width: 100%;
+    left: -200vw;
+    transition-duration: 0.2s;
+  }
+
+  .topnav .option {
+    display: none;
+  }
+
+  .search-container {
+    position: fixed;
+    width: 100vw;
+    top: 70px;
+    left: -300vw;
+    right: 49em;
+    transition-duration: 0.2s;
+  }
+
+  .search-input {
+    width: 100vw !important;
+    border-radius: 0px !important;
+  }
+
+  .search-input input {
+    width: 80vw;
+    border-radius: 0px !important;
+  }
+  .search-input .autocom-box {
+    width: 100%;
+    box-shadow: #136129 1px 0px 3px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .name a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .topnav .option {
+    left: 5vw;
+  }
+  .video .chemVid {
+    margin-top: 3.5em;
+    margin-left: 1.8em;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .topnav .option {
+    left: 2vw;
+  }
+  .video .chemVid {
+    margin-top: 6em;
+    margin-left: 1.5em;
+  }
+  
+}
+
+/* End of Responsive Top Nav */
+
+
+@media only screen and (max-width: 1487px) {
+  .main-container {
+    overflow: auto;
+    overflow-x: hidden;
+  }
+
+  .lessons {
+    height: 100% !important;
+    width: 76% !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* margin-left: 3em;
+    margin-right: 3em; */
+    margin: auto !important;
+  }
+
+  .lessons-container1 {
+    width: 30em !important;
+    margin: 10px 25px 10px 24px;
+  }
+  .lessons-container2 {
+    width: 30em !important;
+    margin: 10px 25px 10px 24px;
+  }
+  .lessons-container3 {
+    width: 30em !important;
+    margin: 10px 25px 10px 24px;
+  }
+  .lessons-container4 {
+    width: 30em !important;
+    margin: 10px 25px 10px 24px;
+  }
+  .lessons-container5 {
+    width: 30em !important;
+    margin: 10px 25px 20px 24px;
+  }
+  .lessons-container6 {
+    width: 30em !important;
+    margin: 10px 25px 20px 24px;
+  }
+}
+
+@media only screen and (max-width: 1409px) {
+  .lessons {
+    width: 80% !important;
+  }
+}
+
+@media only screen and (max-width: 1399px) {
+  .lessons {
+    width: 82% !important;
+  }
+}
+
+@media only screen and (max-width: 1328px) {
+  .lessons {
+    width: 85% !important;
+  }
+}
+
+@media only screen and (max-width: 1251px) {
+  .lessons {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 1193px) {
+  .lessons {
+    width: 95% !important;
+  }
+}
+
+@media only screen and (max-width: 1182px) {
+  .lessons {
+    width: 100% !important;
+  }
+}
+
+/* @media only screen and (max-width: 1121px) {
+  .lessons {
+    width: 100% !important;
+  }
+} */
+
+@media only screen and (max-width: 1131px) {
+  /* .main-container{
+    overflow: scroll;
+  } */
+  .lessons {
+    height: 106em !important;
+    width: 50% !important;
+    margin: auto !important;
+  }
+
+  .lessons-container1, .lessons-container2, .lessons-container3, .lessons-container4, .lessons-container5, .lessons-container6 {
+    float: none !important;
+  }
+
+  /* .lessons-container6 {
+    padding-bottom: 5em !important;
+  } */
+}
+
+@media only screen and (max-width: 1020px) {
+  .lessons {
+    width: 55% !important;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .lessons {
+    width: 60% !important;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .lessons {
+    width: 65% !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .lessons {
+    width: 70% !important;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .lessons {
+    width: 75% !important;
+  }
+}
+
+
+@media only screen and (max-width: 820px) {
+  .lessons {
+    width: 80% !important;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .lessons {
+    width: 85% !important;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .lessons {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .lessons {
+    width: 95% !important;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .lessons {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .heading {
+    margin-bottom: 2.5em !important;
+  }
+  .lessons-container1, .lessons-container2, .lessons-container3, .lessons-container4, .lessons-container5, .lessons-container6 {
+    position: relative;
+    margin-left: 0.5em !important;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .heading {
+    margin-bottom: 3em !important;
+  }
+  .main-container {
+    width: 102vw !important;
+  }
+  .lesson {
+    width: 100vw;
+    margin-left: -14px;
+  }
+  .lessons-container1, .lessons-container2, .lessons-container3, .lessons-container4, .lessons-container5, .lessons-container6 {
+    width: 100% !important;
+
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .lessons {
+    padding-bottom: 70px !important;
+  }
+  .lessonTitle {
+    height: 80px !important;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .heading {
+    margin-bottom: 4em !important;
+  }
+  .lessonTitle {
+    height: 110px !important;
+  }
+}
+
+@media only screen and (min-width: 1130px) {
+  .main-container {
+    height: 90% !important;
+  }
+}

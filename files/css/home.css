@@ -1,7 +1,8 @@
 body {
-    margin: 0;
-    height: 100%;
-    background: #B7EBBC;
+  margin: 0;
+  height: 100%;
+  background: #b7ebbc;
+  overflow: hidden;
 }
 
 /* Top Nav */
@@ -10,9 +11,9 @@ body {
   position: relative;
   background-color: #ffffff;
   overflow: visible;
-  box-shadow: 0px 0px 1px ;
+  box-shadow: 0px 0px 1px;
   z-index: 1;
-  height: 9vh;
+  height: 4.5em;
 }
 
 .topnav img {
@@ -23,9 +24,9 @@ body {
 }
 
 .topnav .name {
-position: relative;
-float: left;
-margin-top: 0px;
+  position: relative;
+  float: left;
+  margin-top: 0px;
 }
 
 .name a {
@@ -33,16 +34,17 @@ margin-top: 0px;
   float: left;
   margin: 0px;
   padding-top: 15px;
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 30px;
   color: #388624;
 }
 
 .topnav .option {
-  position: absolute;
+  position: relative;
   margin-top: 24px;
-  left: 18vw;
-  right: 18vw;
+  float: left;
+  left: 13vw;
+  right: 10vw;
 }
 
 .option a {
@@ -58,316 +60,563 @@ margin-top: 0px;
 }
 
 .option .opt1 {
-  margin-left: 260px;
-}
-
-.option .opt1 {
   text-decoration: underline;
 }
 
-.search-container{
-max-width: 450px;
-margin: 0px auto;
+.checkbtn {
+  font-size: 30px;
+  color: #136129;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 }
 
-.search-container .search-input{
-background-color: #dbeafe;
-width: 380px;
-border-radius: 5px;
-position: relative;
-top: 11px;
-left: 39vw;
-
+#check {
+  display: none;
 }
 
-.search-input input{
-height: 45px;
-width: 300px;
-outline: none;
-border: none;
-border-radius: 5px;
-padding: 0 60px 0 20px;
-font-size: 16px;
-background-color: #dbeafe;
-color: #136129;
+.search-container {
+  float: right;
+  max-width: 20em;
+  margin: 0px auto;
 }
 
-.search-input.active input{
-border-radius: 5px 5px 0 0;
+.search-container .search-input {
+  background-color: #dbeafe;
+  width: 22em;
+  border-radius: 5px;
+  position: relative;
+  top: 0.8em;
+  right: 3em;
 }
 
-.search-input .autocom-box{
-position: absolute;
-padding: 0;
-opacity: 0;
-pointer-events: none;
-width: 23vw;
-max-height: 280px;
-overflow-y: auto;
-overflow-x: hidden;
-background-color: #fff;
-border-radius: 0 0 5px 5px;
+.search-input input {
+  height: 45px;
+  width: 17.5em;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 16px;
+  background-color: #dbeafe;
+  color: #136129;
+}
+
+.search-input.active input {
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box {
+  position: absolute;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  width: 21.5em;
+  max-height: 280px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
 }
 
 .search-input .autocom-box::-webkit-scrollbar {
-width: 0px;
-background: transparent; /* make scrollbar transparent */
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 
-.search-input.active .autocom-box{
-padding: 10px 8px;
-opacity: 1;
-pointer-events: auto;
+.search-input.active .autocom-box {
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.autocom-box li{
-list-style: none;
-padding: 8px 12px;
-display: none;
-width: 100%;
-cursor: default;
-border-radius: 3px;
-color: #136129;
-font-family: "Inter";
+.autocom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+  color: #136129;
+  font-family: "Inter";
 }
 
-.search-input.active .autocom-box li{
-display: block;
+.search-input.active .autocom-box li {
+  display: block;
 }
-.autocom-box li:hover{
-background: #efefef;
+.autocom-box li:hover {
+  background: #efefef;
 }
 
-.search-input .icon{
-position: absolute;
-right: 0px;
-top: 0px;
-height: 55px;
-width: 55px;
-text-align: center;
-line-height: 55px;
-font-size: 20px;
-color: #136129;
-cursor: pointer;
+.search-input .icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #136129;
+  cursor: pointer;
 }
 
 /* End of Top Nav */
 
+.main-container {
+  position: absolute;
+  background-color: #b7ebbc;
+  width: 100%;
+  height: 90%;
+  z-index: -2;
+}
+
+/* Menu */
+
+.main-container .menu {
+  position: absolute;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  overflow: auto;
+  z-index: 2;
+}
+
+.menuOption a {
+  display: block;
+  text-decoration: none;
+  color: #136129;
+  text-align: center;
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.menuOption hr {
+  margin: 0;
+  border-top: #136129 1px dashed;
+}
+
+/* End of Menu */
+
+.main-container .video {
+  position: relative;
+  width: 49%;
+  height: auto;
+  float: left;
+  padding-top: 56.25%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video .chemVid {
+  position: absolute;
+  top: 0em;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+  height: 70%;
+  border-radius: 30px;
+  padding: 5px;
+  background-color: #93D7AA;
+  border: #388624 dashed 2px;
+  z-index: -1;
+  margin: 1.7em 2em 1.5em 2em;
+}
+
+.main-container .sidebar {
+  width: 50%;
+  height: 100%;
+  float: right;
+  margin-right: 0.5em;
+  margin-bottom: 2em;
+}
+
+.sidebar .triviaFacts {
+  width: 98%;
+  height: 43%;
+}
+
+.triviaFacts .facts {
+  background-color: #93d7aa;
+  width: 100%;
+  height: 100%;
+  margin: 10px 0px 10px 0px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px;
+  border: #136129;
+  border-style: dashed;
+  border-width: 1px;
+  float: left;
+}
+
+.triviaFacts h2 {
+  margin: 0px;
+  text-align: center;
+  font-family: "Inter";
+  color: #136129;
+  font-size: 30px;
+}
+
+.triviaFacts hr {
+  border: #136129;
+  border-top: 1px dashed #136129;
+  margin: 7px -3px 0px;
+}
+
+.triviaFacts h1 {
+  margin: 10px;
+  text-align: left;
+  font-family: "Inter";
+  color: #136129;
+  font-size: 35px;
+}
+
+.triviaFacts p {
+  margin: 10px;
+  text-align: left;
+  font-family: "Inter";
+  color: #136129;
+  font-size: 30px;
+}
+
+.sidebar .Trivia {
+  width: 98%;
+  height: 50%;
+  background-color: #93d7aa;
+  margin: 30px auto 15px auto;
+  padding: 0px 5px 2px 5px;
+  border-radius: 5px;
+  border: #136129;
+  border-style: dashed;
+  border-width: 1px;
+  box-shadow: 0px 0px 1px;
+  z-index: -1;
+}
+
+.Trivia .triviaHeading {
+  width: auto;
+  height: 7%;
+  margin-right: 20px;
+}
+
+.Trivia h2 {
+  margin: 7px;
+  color: #136129;
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 25px;
+  float: right;
+}
+
+.Trivia .triviaTitle {
+  margin: 7px;
+  color: #136129;
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 30px;
+  float: left;
+}
+
+.Trivia .line {
+  height: 1%;
+}
+
+.line hr {
+  margin: 30px -3px 0px;
+  border: 0;
+  border-top: 1px dashed #136129;
+}
+
+.Trivia .triviaBody {
+  width: auto;
+  height: 93%;
+  padding: 0px 10px 0px 10px;
+}
+
+.triviaBody .question {
+  width: auto;
+  height: 25%;
+}
+.triviaBody .answer {
+  position: relative;
+  width: auto;
+  height: 75%;
+}
+
+.triviaBody h3 {
+  margin: 5px 0 0 0;
+  color: #136129;
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.triviaBody p {
+  color: #136129;
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.Option button {
+  display: inline-block;
+  margin: 15px 0px 5px 18px;
+  height: 70px;
+  width: 90%;
+  outline: none;
+  background: none;
+  border: #136129 solid 2px;
+  color: #136129;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+
+.Option button:hover {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.Option h3 {
+  display: inline-block;
+}
+
+.triviaBody .Sect1 {
+  width: 50%;
+  height: auto;
+  float: left;
+}
+
+.triviaBody .Sect2 {
+  width: 50%;
+  height: auto;
+  float: right;
+}
+
+.answer .material-symbols-outlined {
+  position: absolute;
+  visibility: hidden;
+  color: #136129;
+  font-size: 100px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 47px;
+}
+.answer .material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+/* Responsive Top Nav */
+
+@media only screen and (max-width: 1130px) {
+  .checkbtn {
+    display: block;
+  }
+
   .main-container {
+    width: auto !important;
+  }
+
+  .menu {
+    display: block !important;
     position: absolute;
-    background-color: #B7EBBC;
     width: 100%;
-    height: 90%;
-    overflow: hidden;
+    height: 100vw;
+    left: -200vw;
+    transition-duration: 0.2s;
+  }
+
+  .topnav .option {
+    display: none;
+  }
+
+  .search-container {
+    position: fixed;
+    width: 100vw;
+    top: 70px;
+    left: -300vw;
+    right: 49em;
+    transition-duration: 0.2s;
+  }
+
+  .search-input {
+    width: 100vw !important;
+    border-radius: 0px !important;
+  }
+
+  .search-input input {
+    width: 80vw;
+    border-radius: 0px !important;
+  }
+  .search-input .autocom-box {
+    width: 100%;
+    box-shadow: #136129 1px 0px 3px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .name a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .topnav .option {
+    left: 5vw;
+  }
+  .video .chemVid {
+    margin-top: 3.5em;
+    margin-left: 1.8em;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .topnav .option {
+    left: 2vw;
+  }
+  .video .chemVid {
+    margin-top: 6em;
+    margin-left: 1.5em;
+  }
+  
+}
+
+/* End of Responsive Top Nav */
+
+@media only screen and (max-width: 1130px) {
+  .main-container {
+    overflow-y: auto !important;
+    overflow-x: hidden;
+  }
+
+  .main-container::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  .main-container::-webkit-scrollbar-thumb {
+    background-color: #9BF0B8;
+    opacity: 0;
+    border-radius: 3px;
+    visibility: hidden;
+    transition: all 1s ease-out;
+  }
+
+  .main-container:hover::-webkit-scrollbar-thumb {
+    background-color: #9BF0B8;
+    opacity: 1;
+    border-radius: 3px;
+    visibility: visible;
+    transition: all 1s ease-in;
   }
 
   .main-container .video {
-    width: 50%;
+    width: 100vw;
     height: auto;
-    float: left;
-    display: inline;
+    float: none !important;
+    margin: 0 !important;
+    overflow: visible;
   }
 
-
   .video .chemVid {
-    background-color: #93D7AA;
-    position: relative;
-    width: 730px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 30px;
-    padding: 5px;
-    border: #388624 dashed 2px;
-    top: 30px;
-    bottom: 15px;
-    left: 15px;
-    right: 15px;
+    margin: 4vw;
+    height: 100%;
+    border-radius: 2px;
   }
 
   .main-container .sidebar {
-    width: 50%;
-    height: 100%;
-    float: right;
+    width: 100%;
+    float: none !important;
   }
 
   .sidebar .triviaFacts {
-    width: 99%;
-    height: 43%;
+    width: auto !important;
+    margin: 4em 1.5em 1.5em 1.7em;
   }
 
   .triviaFacts .facts {
-    background-color: #93D7AA;
-    width: 96.8%;
-    height: 100%;
-    margin: 10px 0px 10px 10px;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 1px ;
-    border: #136129;
-    border-style: dashed;
-    border-width: 1px;
-    float: left;
-  }
-
-  .triviaFacts h2 {
-    margin: 0px;
-    text-align: center;
-    font-family: 'Inter';
-    color: #136129;
-    font-size: 30px;
-  }
-  
-  .triviaFacts hr {
-    border: #136129;
-    border-top: 1px dashed #136129;
-    margin: 7px -3px 0px ;
-  }
-
-  .triviaFacts h1 {
-    margin: 10px;
-    text-align: left;
-    font-family: 'Inter';
-    color: #136129;
-    font-size: 35px;
-  }
-
-  .triviaFacts p {
-    margin: 10px;
-    text-align: left;
-    font-family: 'Inter';
-    color: #136129;
-    font-size: 30px;
-  }
-  
-  .sidebar .Trivia {
-    width: 96%;
-    height: 50%;
-    background-color: #93D7AA;
-    margin: 30px auto 15px auto;
-    padding: 0px 5px 2px 5px;
-    border-radius: 5px;
-    border: #136129;
-    border-style: dashed;
-    border-width: 1px;
-    box-shadow: 0px 0px 1px ;
-  }
-
-  .Trivia .triviaHeading {
     width: auto;
-    height: 7%;
-    margin-right: 20px
+  }
+
+  .sidebar .Trivia {
+    width: auto !important;
+    margin: 2em 1.5em 2em 1.7em;
+    padding: 0;
+    padding-bottom: 2em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .main-container .sidebar {
+    padding-bottom: 10em;
   }
 
   .Trivia h2 {
-    margin: 7px;
-    color: #136129;
-    font-family: 'Inter';
-    font-weight: bold;
-    font-size: 25px;
-    float: right;
-  }
-
-  .Trivia .triviaTitle {
-    margin: 7px;
-    color: #136129;
-    font-family: 'Inter';
-    font-weight: bold;
-    font-size: 30px;
-    float: left;
-  }
-
-  .Trivia .line {
-    height: 1%;
-  }
-
-  .line hr {
-    margin: 30px -3px 0px ;
-    border: 0;
-    border-top: 1px dashed #136129;
-  }
-
-  .Trivia .triviaBody {
-    width: auto;
-    height: 93%;
-    padding: 0px 10px 0px 10px;
-  }
-
-  .triviaBody .question {
-    width: auto;
-    height: 25%;
-  }
-  .triviaBody .answer {
-    width: auto;
-    height: 75%;
-  }
-
-  .triviaBody h3 {
-    margin: 5px 0 0 0;
-    color: #136129;
-    font-family: 'Inter';
-    font-weight: bold;
     font-size: 20px;
   }
-
-  .triviaBody p {
-    color: #136129;
-    font-family: 'Inter';
-    font-weight: bold;
-    font-size: 15px;
+  
+  .Trivia .triviaTitle {
+    font-size: 25px;
   }
 
-  .Option button {
-    display: inline-block;
-    margin: 15px 0px 5px 18px;
-    height: 70px;
-    width: 90%;
-    outline: none;
-    background: none;
-    border: #136129 solid 2px;
-    color: #136129;
-    border-radius: 5px;
-    transition-duration: 0.4s;
+  .triviaFacts h2 {
+    font-size: 25px;
+  }
+  
+  .triviaFacts h1 {
+    font-size: 30px;
+  }
+  
+  .triviaFacts p {
+    font-size: 25px;
   }
 
-  .Option button:hover {
-    background-color: #4CAF50; /* Green */
-    color: white;
+  .sidebar .Trivia {
+    padding-bottom: 12em;
   }
 
-  .Option h3 {
-    display: inline-block;
-  }
-
-  .triviaBody .Sect1 {
-    width: 50%;
-    height: auto;
-    float: left;
-  }
-
-  .triviaBody .Sect2 {
-    width: 50%;
-    height: auto;
-    float: right;
-  }
-
-  .answer .material-symbols-outlined {
-    position: absolute;
-    visibility: hidden;
-    color: #136129;
-    font-size: 100px;
-    text-align: center;
-    left: 769px;
-    right: 0px;
-    bottom: 56px;
+  .triviaBody .Sect1, .triviaBody .Sect2 {
+    width: auto;
+    float: none !important;
   }
   .answer .material-symbols-outlined {
-    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+    font-size: 70px;
+    top: 150px;
   }
+}
 
+@media only screen and (min-width: 1130px) {
+  .main-container {
+    height: 90% !important;
+  }
+}
 
-
-
-
-
- 
+@media only screen and (max-width: 341px) {
+  .triviaFacts {
+    height: auto !important;
+  }
+  .Trivia {
+    padding: 0 !important;
+    height: auto !important;
+  }
+  .currentScore {
+    display: none !important;
+  }
+  .question h3 {
+    display: none !important;
+  }
+  .question p {
+    margin-top: 3em !important;
+  }
+  .sidebar {
+    padding-bottom: 3em !important;
+  }
+}
