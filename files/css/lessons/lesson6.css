@@ -214,6 +214,7 @@ body {
   margin: auto;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .lesson-container::-webkit-scrollbar {
