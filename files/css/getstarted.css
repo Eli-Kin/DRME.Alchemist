@@ -277,7 +277,7 @@ body {
     position: fixed;
     width: 100%;
     top: 70px;
-    left: -100%;
+    left: -200%;
     transition: all .5s;
   }
 

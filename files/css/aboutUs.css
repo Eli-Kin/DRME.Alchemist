@@ -396,7 +396,7 @@ body {
     overflow-y: auto;
   }
   .developer {
-    height: 50em !important;
+    height: 53em !important;
     padding-bottom: 0.5em !important;
   }
   .dev-description {
@@ -419,9 +419,61 @@ body {
   }
 }
 
+@media only screen and (max-width: 920px) {
+  .dev-name {
+    top: 220px !important;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .dev-name {
+    top: 230px !important;
+  }
+  .developer {
+    padding-bottom: 5em !important;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .dev-name {
+    top: 250px !important;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .dev-name {
+    top: 265px !important;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .dev-name {
+    top: 290px !important;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .dev-name {
+    top: 320px !important;
+  }
+}
+
+@media only screen and (max-width: 315px) {
+  .dev-name {
+    top: 340px !important;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .dev-name {
+    top: 370px !important;
+  }
+}
+
 @media only screen and (max-width: 857px) {
   .developer {
     height: 77em !important;
+    padding-bottom: 3em !important;
   }
   .dev-description {
     height: 67em !important;
@@ -457,6 +509,67 @@ body {
   }
   .dev-description {
     height: 90em !important;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .dev-name {
+    top: 230px !important;
+  }
+  .developer {
+    padding-bottom: 5em !important;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .dev-name {
+    top: 250px !important;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .dev-name {
+    top: 265px !important;
+  }
+  .developer {
+    padding-bottom: 7em !important;
+  }
+  .sect1, .sect2 {
+    float: none !important;
+    width: 100% !important;
+}
+.dev-description {
+  height: 73em !important;
+}
+}
+
+@media only screen and (max-width: 385px) {
+  .dev-name {
+    top: 290px !important;
+  }
+}
+
+@media only screen and (max-width: 355px) {
+  .dev-name {
+    top: 320px !important;
+  }
+  .developer {
+    padding-bottom: 9em !important;
+  }
+}
+
+@media only screen and (max-width: 315px) {
+  .dev-name {
+    top: 340px !important;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .dev-name {
+    top: 370px !important;
+  }
+  .developer {
+    padding-bottom: 11em !important;
   }
 }
 
