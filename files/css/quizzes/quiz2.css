@@ -815,6 +815,21 @@ body {
   #popUp3 p {
     font-size: 35px !important;
   }
+  #popUp {
+    width: 100% !important;
+    left: 0 !important;
+    padding: 0 0 20px 0 !important;
+  }
+  #popUp2 {
+    width: 100% !important;
+    left: 0 !important;
+    padding: 0 0 20px 0 !important;
+  }
+  #popUp3 {
+    width: 100% !important;
+    left: 0 !important;
+    padding: 0 0 20px 0 !important;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -867,6 +882,7 @@ body {
   }
   .answer label {
     height: auto !important;
+    padding-bottom: 1em !important;
   }
 }
 
@@ -882,15 +898,9 @@ body {
   .quizTitle h1 {
     font-size: 1.3em !important;
   }
-  .popUp {
-    /* height: 64% !important; */
-    left: 8% !important;
-  }
+
   #popUp2 button {
     padding: 0 !important;
-  }
-  #popUp2 {
-    left: 19%  !important;
   }
 
   #popUp3 p {

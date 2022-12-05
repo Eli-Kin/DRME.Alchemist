@@ -493,6 +493,19 @@ table, th, td {
       margin-left: 1.8em;
     }
   }
+
+  @media only screen and (max-width: 633px) {
+    table {
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    #equation {
+      overflow-x: scroll;
+    }
+  }
+  
   
   @media only screen and (max-width: 1180px) {
     .topnav .option {
@@ -534,7 +547,6 @@ table, th, td {
     }
     table {
       width: 100% !important;
-      display: block;
       overflow-x: auto;
       white-space: nowrap;
     }
