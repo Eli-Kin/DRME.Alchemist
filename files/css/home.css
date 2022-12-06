@@ -378,9 +378,16 @@ body {
   transition-duration: 0.4s;
 }
 
-.Option button:hover {
+.Option button:active {
   background-color: #4caf50; /* Green */
   color: white;
+}
+
+@media (hover: hover) {
+  .Option button:hover {
+    background-color: #4caf50; /* Green */
+    color: white;
+  }
 }
 
 .Option h3 {

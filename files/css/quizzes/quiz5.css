@@ -344,6 +344,24 @@ body {
   color: white;
 }
 
+input:checked ~ .correct {
+  color: white;
+}
+
+input:checked ~ .wrong {
+  color: white;
+}
+
+input:checked ~ .custom-radio {
+  border: #9bf0b8 2px dashed;
+}
+
+input:checked ~ header {
+  color: white;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #0b3b06, 1px -1px 0 #0b3b06, -1px 1px 0 #0b3b06, 1px 1px 0 #0b3b06;
+}
+
 .radio-container header {
   margin-top: 21px;
 }
