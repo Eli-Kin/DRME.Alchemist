@@ -214,6 +214,7 @@ body {
     margin: auto;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   .lesson-container::-webkit-scrollbar {
@@ -294,6 +295,8 @@ body {
   .lessonImg a {
     text-decoration: none;
     color: #136129;
+    word-wrap: break-word;
+
   }
 
   .lessonBody .topics {
@@ -466,6 +469,10 @@ body {
     float: none !important;
     margin-bottom: 15px !important;
     width: 100% !important;
+  }
+
+  #btn1 {
+    margin-bottom: 5em !important;
   }
 
   .lessonTitle h1 {

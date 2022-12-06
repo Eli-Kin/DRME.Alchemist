@@ -7,6 +7,14 @@ facts[3] = "Several radioactive elements glow when it is dark."
 facts[4] = "Oxygen gas has no color. But solid or liquid oxygen appears to be blue."
 facts[5] = "It is not possible to freeze helium by exposing it to a low temperature. Intense pressure has to be applied to freeze it."
 facts[6] = "J is the only letter that is not present in the periodic table."
+facts[7] = "You can die from drinking too much water."
+facts[9] = "Glass is not a solid, it’s a liquid."
+facts[10] = "Helium is lighter than air."
+facts[11] = "One bucket full of water contains more atoms than there are buckets of water in the Atlantic Ocean."
+facts[12] = "By the time you feel thirsty, you've already lost about 1% of your body's water."
+facts[13] = "Bee stings are acidic, while wasp stings are alkaline."
+facts[14] = "Lightning strikes produce O3, which is ozone, and strengthen the ozone layer of the atmosphere."
+facts[15] = "Many radioactive elements actually glow in the dark."
 
 //Slideshow the Facts
 var i = 0;
@@ -34,6 +42,17 @@ quiz[3] = new Question("Who is the author of a popular chemistry text published 
 quiz[4] = new Question("What substances that changes its physical appearance but not its composition?", "Physical Changes", "Physical Properties", "Chemical Changes", "Chemical Properties");
 quiz[5] = new Question("What subtances transformed into chemically different substance?", "Chemical Changes", "Physical Changes", "Physical Properties", "Chemical Properties");
 quiz[6] = new Question("It has both definite shape and definite volume", "Solid", "Liquid", "Gas", "Plasma");
+quiz[7] = new Question("Which element is used as a disinfectant, as a bleaching agent and to purify water?", "Chlorine", "Sodium", "Iodine", "Potassium");
+quiz[8] = new Question("What does the number of protons in the nucleus of an atom determine?", "Atomic Number", "Atomic Mass", "Atomic Volume", "Atomic Length");
+quiz[9] = new Question("What raw material is used for making glass?", "Sand", "Soil", "Mud", "Clay");
+quiz[10] = new Question("Steel is an alloy of which two substances?", "Carbon and Iron", "Aluminum and Iron", "Iron and Potassium", "Iron and Oxygen");
+quiz[11] = new Question("Which gas forms approximately 1% of the atmosphere?", "Argon", "Oxygen", "Helium", "Hydrogen");
+quiz[12] = new Question("Sodium Chloride is better known as what?", "Salt", "Water", "Bleach", "Acid");
+quiz[13] = new Question("What is main element in Bronze?", "Copper", "Iron", "Aluminum", "Zinc");
+quiz[14] = new Question("What is Calcium Carbonate normally known as?", "Chalk", "Soap", "Coal", "Oil");
+quiz[15] = new Question("Coal is composed of which element?", "Carbon", "Calcium", "Sodium", "Chlorine");
+quiz[16] = new Question("What name is solid carbon dioxide known?", "Dry Ice", "Hot Water", "Nitrogen", "Liquid Ice"
+);
 var randomQuestion;
 var answers = [];
 var currentScore = localStorage.getItem('score');
