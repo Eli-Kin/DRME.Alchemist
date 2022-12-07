@@ -290,8 +290,8 @@ body {
   width: 98%;
   height: 50%;
   background-color: #93d7aa;
-  margin: 30px auto 15px auto;
-  padding: 0px 5px 2px 5px;
+  margin: 30px auto 0px auto;
+  padding: 0px 5px 5px 5px;
   border-radius: 5px;
   border: #136129;
   border-style: dashed;
@@ -342,7 +342,6 @@ body {
 
 .triviaBody .question {
   width: auto;
-  height: 25%;
 }
 .triviaBody .answer {
   position: relative;
@@ -355,14 +354,14 @@ body {
   color: #136129;
   font-family: "Inter";
   font-weight: bold;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 .triviaBody p {
   color: #136129;
   font-family: "Inter";
   font-weight: bold;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .Option button {

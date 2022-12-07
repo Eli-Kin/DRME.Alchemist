@@ -25,7 +25,7 @@ var intervalId = setInterval(function() {
   } else {
     i++;
   }
-}, 60000)
+}, 20000)
 
 //Randomize Trivia facts array
 var randomFacts = Math.floor(Math.random()*facts.length);

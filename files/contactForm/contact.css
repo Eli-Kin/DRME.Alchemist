@@ -1,0 +1,162 @@
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+   box-sizing: border-box; 
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #b7ebbc;
+  margin: 0;
+  font-family: "Nunito";
+  color: #136129;
+  overflow: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.contact-container {
+  width: 50%;
+  height: auto;
+  margin: 0;
+  position: absolute;
+  /* margin-top: 1em;
+  margin-left: 25%;
+  margin-right: 25%; */
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.contactForm {
+  width: 100%;
+  height: 80%;
+  max-width: 800px;
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid 2px #136129;
+  background-color: #93d7aa;
+}
+
+.contactForm h1 {
+    margin: 0;
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 2px dotted #136129;
+    background-color: none;
+    height: 1px;
+    width: 100%;
+}
+
+.contactForm input,
+label,
+textarea,
+button {
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  border-width: 1px;
+  border-radius: 5px;
+  color: #136129;
+}
+
+.contactForm span {
+    cursor: pointer;
+}
+
+.contactForm label {
+  color: #136129;
+  font-weight: bold;
+}
+
+.contactForm input,
+textarea {
+  background-color: #7be19d;
+  border: #136129 2px solid;
+  outline: none;
+}
+
+.contactForm input:focus,
+textarea:focus {
+    box-shadow: 0 0 15px #1b4d35;
+}
+
+.contactForm textarea {
+    resize: none;
+}
+
+.contactForm input::placeholder,
+textarea::placeholder {
+  color: #136129;
+  font-family: "Inter";
+}
+
+textarea::-webkit-scrollbar {
+  width: 7px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #9BF0B8;
+  opacity: 0;
+  border-radius: 3px;
+  visibility: hidden;
+  transition: all 1s ease-out;
+}
+
+textarea:hover::-webkit-scrollbar-thumb {
+  background-color: #9BF0B8;
+  opacity: 1;
+  border-radius: 3px;
+  visibility: visible;
+  transition: all 1s ease-in;
+}
+
+.submit {
+    width: 100%;
+    text-align: center;
+}
+
+.submitButton {
+  width: 35%;
+  background: #3a9057;
+  font-size: 15px;
+  color: #fff;
+  border-width: 0px;
+  margin: 0 !important;
+}
+
+.submitButton:hover {
+    background-color: #245334;
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-container {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .contactForm {
+    border-radius: 0;
+    height: 100% !important;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}

@@ -217,6 +217,7 @@ body {
   right: 0;
   margin: auto;
   margin-top: 30px;
+  margin-bottom: 3em;
   border: #136129 dashed 1px;
 }
 
@@ -241,7 +242,7 @@ body {
 
 .dev-description h2 {
   text-align: center;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: bolder;
   font-size: 30px;
   color: #136129;
@@ -250,7 +251,7 @@ body {
 
 .dev-description p {
   text-align: center;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 15px;
   color: #136129;
   line-height: 20px;
@@ -266,7 +267,8 @@ body {
   margin: auto;
 }
 
-.dev-name .sect1, .dev-name .sect2 {
+.dev-name .sect1,
+.dev-name .sect2 {
   width: 50%;
   float: left;
 }
@@ -289,7 +291,7 @@ body {
 } */
 
 .dev h5 {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: bold;
   color: #136129;
   padding: 20px;
@@ -303,7 +305,7 @@ body {
 
 .dev #initial {
   margin: 0;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 30px;
   color: #136129;
   padding: 0px 20px 0px 20px;
@@ -311,10 +313,37 @@ body {
 }
 
 .dev p {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 12.5px;
   color: #136129;
   padding: 0px 20px 0px 20px;
+}
+
+.btn {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.btn button {
+  position: relative;
+  display: inline-block;
+  height: 70px;
+  width: 35%;
+  background-color: #9bf0b8;
+  font-size: 20px;
+  color: #136129;
+  border-width: 0px;
+  border-radius: 5px;
+  border: #136129 solid 1px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.btn button:hover {
+  background-color: #39b15b;
+  color: white;
 }
 
 /* Responsive Top Nav */
@@ -385,11 +414,9 @@ body {
     margin-top: 6em;
     margin-left: 1.5em;
   }
-  
 }
 
 /* End of Responsive Top Nav */
-
 
 @media only screen and (max-width: 1470px) {
   .main-container {
@@ -402,7 +429,8 @@ body {
   .dev-description {
     height: 40em !important;
   }
-  .sect1, .sect2 {
+  .sect1,
+  .sect2 {
     float: none !important;
     width: 70% !important;
     margin: auto !important;
@@ -413,7 +441,7 @@ body {
 }
 
 @media only screen and (max-width: 1067px) {
-  .developer { 
+  .developer {
     width: 100% !important;
     margin-top: 10px !important;
   }
@@ -534,13 +562,14 @@ body {
   .developer {
     padding-bottom: 7em !important;
   }
-  .sect1, .sect2 {
+  .sect1,
+  .sect2 {
     float: none !important;
     width: 100% !important;
-}
-.dev-description {
-  height: 73em !important;
-}
+  }
+  .dev-description {
+    height: 73em !important;
+  }
 }
 
 @media only screen and (max-width: 385px) {
