@@ -5,7 +5,8 @@
 }
 
 html {
-  height: 100%;
+  height: 100% ;
+  /* overflow: hidden; */
 }
 
 body {
@@ -13,7 +14,6 @@ body {
   margin: 0;
   font-family: "Nunito";
   color: #136129;
-  overflow: auto;
   overflow-x: hidden;
   height: 100%;
 }
@@ -21,15 +21,16 @@ body {
 .contact-container {
   width: 50%;
   height: auto;
-  margin: 0;
-  position: absolute;
-  /* margin-top: 1em;
-  margin-left: 25%;
+  margin: auto;
+  /* position: absolute; */
+  margin-top: 5em;
+  margin-bottom: 5em;
+  /* margin-left: 25%;
   margin-right: 25%; */
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  /* top: 25%;
+  left: 25%; */
+  /* -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);  */
 }
 
 .contactForm {
@@ -141,6 +142,7 @@ textarea:hover::-webkit-scrollbar-thumb {
   .contact-container {
     width: 100% !important;
     height: 100% !important;
+    margin: 0 !important;
   }
   .contactForm {
     border-radius: 0;
@@ -148,7 +150,14 @@ textarea:hover::-webkit-scrollbar-thumb {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media only screen and (max-height: 670px) {
+  .contact-container {
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
   html {
     transform: rotate(-90deg);
     transform-origin: left top;
@@ -159,4 +168,4 @@ textarea:hover::-webkit-scrollbar-thumb {
     top: 100%;
     left: 0;
   }
-}
+} */
