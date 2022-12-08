@@ -16,6 +16,11 @@ facts[13] = "Bee stings are acidic, while wasp stings are alkaline."
 facts[14] = "Lightning strikes produce O3, which is ozone, and strengthen the ozone layer of the atmosphere."
 facts[15] = "Many radioactive elements actually glow in the dark."
 
+//Randomize Trivia facts array
+var randomFacts = Math.floor(Math.random()*facts.length);
+var fact = facts[randomFacts]
+document.getElementById("theFacts").innerHTML = fact;
+
 //Slideshow the Facts
 var i = 0;
 var intervalId = setInterval(function() {
@@ -25,12 +30,8 @@ var intervalId = setInterval(function() {
   } else {
     i++;
   }
-}, 20000)
+}, 10000)
 
-//Randomize Trivia facts array
-var randomFacts = Math.floor(Math.random()*facts.length);
-var fact = facts[randomFacts]
-document.getElementById("theFacts").innerHTML = fact;
 
 
 //Quiz Question and Answer
