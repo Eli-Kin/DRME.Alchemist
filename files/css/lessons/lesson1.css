@@ -323,6 +323,13 @@ body {
     text-align: justify;
   }
 
+  .reference {
+    font-family: 'Inter';
+    color: #136129;
+    font-size: 25;
+    font-weight: bold;
+  }
+
   .lesson-container .lessonFunction {
     position: relative;
     width: auto;
