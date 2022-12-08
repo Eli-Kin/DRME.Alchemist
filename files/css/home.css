@@ -642,6 +642,10 @@ body {
     border-right: none !important;
     border-left: none !important;
   }
+  .answer .material-symbols-outlined {
+    font-size: 70px;
+    top: 130px;
+  }
 }
 
 @media only screen and (max-width: 341px) {
