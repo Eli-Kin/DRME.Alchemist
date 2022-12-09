@@ -91,6 +91,7 @@ function Select() {
       inputElem.value = e.target.textContent;
       searchInput.classList.remove("active");
       document.getElementById("search").focus();
+      document.getElementById("isearch").click();
     });
   });
 }
