@@ -561,6 +561,68 @@ body {
   }
 }
 
+@media only screen and (max-height: 700px) {
+  .main-container {
+    overflow-y: auto !important;
+    overflow-x: hidden;
+  }
+
+  .main-container::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  .main-container::-webkit-scrollbar-thumb {
+    background-color: #9bf0b8;
+    opacity: 0;
+    border-radius: 3px;
+    visibility: hidden;
+    transition: all 1s ease-out;
+  }
+
+  .main-container:hover::-webkit-scrollbar-thumb {
+    background-color: #9bf0b8;
+    opacity: 1;
+    border-radius: 3px;
+    visibility: visible;
+    transition: all 1s ease-in;
+  }
+
+  .main-container .video {
+    width: 100vw;
+    height: auto;
+    float: none !important;
+    margin: 0 !important;
+    overflow: visible;
+  }
+
+  .video .chemVid {
+    margin: 4vw;
+    height: 100%;
+    border-radius: 2px;
+  }
+
+  .main-container .sidebar {
+    width: 100%;
+    float: none !important;
+  }
+
+  .sidebar .triviaFacts {
+    width: auto !important;
+    margin: 4em 1.5em 1.5em 1.7em;
+  }
+
+  .triviaFacts .facts {
+    width: auto;
+  }
+
+  .sidebar .Trivia {
+    width: auto !important;
+    margin: 2em 1.5em 2em 1.7em;
+    padding: 0;
+    padding-bottom: 2em;
+  }
+}
+
 @media only screen and (max-width: 700px) {
 
   .Trivia h2 {
