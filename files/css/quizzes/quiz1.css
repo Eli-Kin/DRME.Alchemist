@@ -467,6 +467,7 @@ input:checked ~ header {
   position: relative;
   box-shadow: 1px 1px 5px #53a055;
   display: block;
+  margin-bottom: 1em;
 }
 
 #btn:hover {
