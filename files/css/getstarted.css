@@ -238,6 +238,16 @@ body {
   }
 }
 
+@media only screen and (max-width: 912px) and (min-height: 659px) {
+  .intro h2 {
+    font-size: 2em;
+    margin-top: 50px !important;
+  }
+  .intro p {
+    font-size: 1em !important;
+  }
+}
+
 @media only screen and (max-width: 1100px) {
   .intro h2 {
     margin-top: 50px !important;
