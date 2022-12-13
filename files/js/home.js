@@ -8,6 +8,7 @@ facts[4] = "Oxygen gas has no color. But solid or liquid oxygen appears to be bl
 facts[5] = "It is not possible to freeze helium by exposing it to a low temperature. Intense pressure has to be applied to freeze it."
 facts[6] = "J is the only letter that is not present in the periodic table."
 facts[7] = "You can die from drinking too much water."
+facts[8] = "Mars is red because its surface contains a lot of iron oxide or rust."
 facts[9] = "Glass is not a solid, it’s a liquid."
 facts[10] = "Helium is lighter than air."
 facts[11] = "One bucket full of water contains more atoms than there are buckets of water in the Atlantic Ocean."
