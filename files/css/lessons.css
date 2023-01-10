@@ -238,6 +238,7 @@ body {
     height: auto;
     float: left;
   }
+
   .lessons .lessons-container2 {
     width: 30%;
     margin: 10px 25px 10px 24px;
@@ -287,6 +288,14 @@ body {
     border-radius: 30px;
     padding: 5px;
     border: #388624 dashed 2px;
+  }
+
+  
+  .lessonImg:hover {
+    -webkit-box-shadow: 0px 0px 30px #000600;
+    -moz-box-shadow: 0px 0px 30px #000600;
+    box-shadow: 0px 0px 30px #000600;
+    transition: 250ms;
   }
 
   .lesson .lessonTitle {
